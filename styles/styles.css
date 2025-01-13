@@ -1,0 +1,306 @@
+/* Reset de CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color:#e0e0e0;
+}
+
+header {
+    display: flex;
+    border-style: solid;
+    height: 8rem;
+    align-items: center;
+    justify-content: center;
+    background-color: blue;
+    box-sizing: border-box;
+}
+footer{
+    box-sizing: border-box;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    border-style: solid;
+    height: 8rem;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+}
+
+.ruteIndicator{
+    height: 40px;
+    align-content: center;
+    padding-left: 2rem;
+}
+
+.Mitem{
+    display: flex;
+    gap: 2rem;
+    padding: 5vh 4%;
+    background-color: white;
+}
+.Mitem .L_Mitem{
+    background-color: #f5f5f5;
+    flex: 1.5;
+    order:1;
+    padding: 10px;
+    border-style: solid;
+    border-width: 0.1px;
+    border-color: #00000046;
+    border-radius: 1%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.247);
+}
+
+.Mitem .L_Mitem .L_Mitem_imgs{
+    gap: 10px;
+    display: flex;
+    background-color: inherit;
+    padding: 10px;
+}
+
+.Mitem .L_Mitem .L_Mitem_imgs .mainIMG{
+    width: 75%;
+    display: flex;
+    padding-top: 8vh;
+    align-items: start;
+    justify-content: center;
+    border-style: none;
+    border-radius: 1%;
+    padding-bottom: 8vh;
+}
+.Mitem .L_Mitem .L_Mitem_imgs .mainIMG img{
+    width: 75%;
+    height: auto;
+    aspect-ratio: 9/16;
+    border-style: solid;
+    border-radius: 2%;
+    border-width: 0.1px;
+    border-color: #00000046;
+    overflow: hidden;
+    transition: transform 0.5s ease;
+}
+
+.Mitem .R_Mitem a {
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+.Mitem .L_Mitem .L_Mitem_imgs .mainIMG img:hover{
+    transform: scale(1.2);
+}
+
+.Mitem .L_Mitem .L_Mitem_imgs .L_Mitem_imgs_extras{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    border-style: none;
+    border-radius: 2%;
+    gap: 2vh;
+    padding: 2vh 1%;
+    align-items: center;
+}
+.Mitem .L_Mitem .L_Mitem_imgs .L_Mitem_imgs_extras img{
+    width: 90%;
+    height: auto;
+    aspect-ratio: 9/16;
+    border-style: solid;
+    border-radius: 2%;
+    border-width: 0.1px;
+    border-color: #00000046;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Mitem .L_Mitem .L_Mitem_imgs .L_Mitem_imgs_extras img:hover{
+    border-color: rgba(180, 180, 176, 0.822);
+    box-shadow: 0 5px 5px rgb(75, 49, 49);
+}
+
+.Mitem .L_Mitem .L_Mitem_txt{
+    background-color: inherit;
+    display: flex;
+    padding-left: 20px;
+    margin-top: 38px;
+    gap: 10px;
+}
+.Mitem .L_Mitem .L_Mitem_txt h2{
+    background-color: inherit;
+    font-size: 0.8rem;
+    
+}
+
+.Mitem .L_Mitem .L_Mitem_txt a{
+    background-color: inherit;
+    color: #000;
+    text-decoration: none;
+}
+.Mitem .L_Mitem .L_Mitem_com{
+    padding-left: 10px;
+    margin-left: 20px;
+    margin-top: 10px;
+
+}
+.Mitem .L_Mitem hr {
+    width: 93%;
+    align-items: center;
+    border: none;
+    border-top: 1.3px solid #000;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.Mitem .R_Mitem {
+    background-color: #e0e0e0;
+    height: auto;
+    order: 2;
+    padding: 1% 2%;
+    border-style: solid;
+    border-width: 0.1px;
+    border-color: #00000046;
+    border-radius: 1%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.247);
+    position: sticky;
+    top: 10px;
+    width: 30%;
+}
+
+.Mitem .R_Mitem .CAL{
+    display: flex;
+    gap: 2%;
+}
+.Mitem .R_Mitem .R_Mitem_prize{
+    margin-bottom: 30px;
+}
+.Mitem .R_Mitem .R_Mitem_prize h2{
+    margin: 0;
+}
+
+.Mitem .R_Mitem .R_Mitem_talle{
+    margin-top: 20px;
+    display: block;
+    flex-direction: column;
+    gap: 2%;
+}
+
+.Mitem .R_Mitem .R_Mitem_bot{
+    position: relative;
+    bottom:-20px;
+}
+
+@media (max-width: 1024px) {
+    header, footer {
+        height: 6rem;
+        font-size: 0.9rem;
+    }
+
+    .Mitem {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .Mitem .R_Mitem {
+        width: 100%;
+        order: 2;
+    }
+
+    .Mitem .R_Mitem .R_Mitem_bot{
+        position: relative;
+        bottom:0px;
+    }
+
+    .Mitem .L_Mitem {
+        order: 1;
+    }
+
+    .Mitem .L_Mitem .L_Mitem_imgs .mainIMG img {
+        width: 90%;
+    }
+
+    .Mitem .L_Mitem .L_Mitem_imgs .L_Mitem_imgs_extras img {
+        width: 70%;
+    }
+}
+
+@media (max-width: 768px) {
+    header, footer {
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+        padding: 1rem;
+    }
+
+    .ruteIndicator {
+        font-size: 0.9rem;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .Mitem {
+        flex-direction: column;
+        padding: 2rem 2%;
+    }
+
+    .Mitem .R_Mitem {
+        width: 100%;
+        padding: 2rem;
+        background-color: #e0e0e0; /* Fondo gris que cubre todo */
+    }
+
+    .Mitem .L_Mitem {
+        width: 100%;
+        padding: 1rem;
+        height: auto;
+    }
+
+
+    .Mitem .L_Mitem .L_Mitem_imgs .mainIMG{
+        position: relative;
+        top: 0vh;
+        width: 100%;
+    }
+
+    .Mitem .L_Mitem .L_Mitem_imgs .mainIMG img,
+    .Mitem .L_Mitem .L_Mitem_imgs .L_Mitem_imgs_extras img {
+        width: 90%;
+        position: relative;
+        top: -5vh;
+    }
+
+    .Mitem .L_Mitem .L_Mitem_imgs .L_Mitem_imgs_extras {
+        order: 2;
+        display: flex;
+        border-style: none;
+        border-radius: 2%;
+        gap: 8vh;
+        padding: 2vh 1%;
+        position: relative;
+        justify-content: center;
+        flex-direction: row;
+
+    }
+
+    .Mitem .L_Mitem .L_Mitem_imgs .L_Mitem_imgs_extras img {
+        height: auto;
+    }
+
+    .Mitem .R_Mitem .R_Mitem_bot {
+        position: relative;
+        top: 2vh;
+    }
+
+    /* Ocultar secciones de detalles y comentarios */
+    .Mitem .L_Mitem .L_Mitem_txt,
+    .Mitem .L_Mitem .L_Mitem_com,
+    .Mitem .L_Mitem hr {
+        display: none;
+    }
+
+    .Mitem .L_Mitem .L_Mitem_imgs {
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+        padding: 10px;
+        border-style: none;
+        border-radius: 1%;
+    }
+}
