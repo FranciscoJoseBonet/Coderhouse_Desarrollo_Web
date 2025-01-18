@@ -471,42 +471,72 @@ header .search-box .lupita{
     color: #ffffff;
 }
 
-.footer_form p {
-    margin: 0;
-    line-height: 1.5;
-}
-
 .body_sobrefoot{
-    background-color: #d4d4d4;
+    background-color: #cccaca;
     height: 200px;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    padding: 2%;
+}
+.body_sobrefoot .bsf_text{
+    order: 1;
+    align-content: center;
+    padding: 0 18px ;
+    flex-grow: 0;
+}
+
+
+.body_sobrefoot .subscription {
+    order: 2;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-grow: 1;
 
 }
 
-.tsobref{
-    position: relative;
-    top: 49px;
-    left: 5%;
+
+@media (max-width: 768px) {
+    .body_sobrefoot{
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+    }
+    .body_sobrefoot .bsf_text{
+        padding: 2vh 3%;
+        justify-items: center;
+        padding-bottom: 0;
+    }
+    .body_sobrefoot .subscription{
+        margin: 2vh;
+        justify-content: center;
+        width: 80%;
+    }
+
 }
-.xsobref{
-    position: relative;
-    top: 55px;
-    left: 5%;
+.subscription form{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 3% 5%;
 }
 
 .subscription input[type="submit"] {
-    background-color: #000000; /* Color cálido suave (beige) */
+    background-color: #000000;
     padding: 0px 21px;
     border: none;
-    border-radius: 8px; /* Bordes más redondeados */
+    border-radius: 8px;
     cursor: pointer;
-    font-size: 18px; /* Aumentamos el tamaño de la fuente para que sea más visible */
-    color: #ffffff; /* Texto blanco para buen contraste */
+    font-size: 18px;
+    color: #ffffff;
     height: 45px;
     transition: background-color 0.3s, transform 0.2s;
-    position: relative;
-    left: 85%;
-    top: -57%;
-    align-items: center;
+
 }
 
 .subscription input[type="submit"]:hover {
@@ -518,8 +548,7 @@ header .search-box .lupita{
 
 
 .subscription input[type="email"] {
-    width: 80%;
-    max-width: 350px;
+
     height: 45px;
     padding: 12px;
     margin-bottom: 15px;
@@ -543,21 +572,6 @@ header .search-box .lupita{
 }
 
 
-.subscription {
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    background-color: #f4f4f4;
-    border-radius: 10px;
-    padding: 30px 2%;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    max-width: 500px;
-    position: relative;
-    top: -60px;
-    left: 65%;
-    height: 100px;
-}
 
 /* Pagina del item*/
 .ruteIndicator{
@@ -769,6 +783,7 @@ header .search-box .lupita{
         height: auto;
 
     }
+
 
     .ruteIndicator {
         font-size: 0.9rem;
