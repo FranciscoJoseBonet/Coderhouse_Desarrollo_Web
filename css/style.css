@@ -180,7 +180,7 @@ header{
     display: flex;
     align-items: center;
     gap: 5px;
-    margin-top: 0px;
+    margin-top: -15px;
 }
 
 /* Estilo para el input de búsqueda */
@@ -309,7 +309,7 @@ header .search-box .lupita{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 100%;
+    width: 101%;
     height: 100%;
     object-fit: cover; /* Asegura que el video se ajuste al contenedor */
 }
@@ -494,28 +494,10 @@ header .search-box .lupita{
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-grow: 1;
-
+    max-width: 35%;
+    margin-left: auto;
 }
 
-
-@media (max-width: 768px) {
-    .body_sobrefoot{
-        flex-direction: column;
-        align-items: center;
-        justify-items: center;
-    }
-    .body_sobrefoot .bsf_text{
-        padding: 2vh 3%;
-        justify-items: center;
-        padding-bottom: 0;
-    }
-    .body_sobrefoot .subscription{
-        margin: 2vh;
-        justify-content: center;
-        width: 80%;
-    }
-
-}
 .subscription form{
     display: flex;
     flex-direction: column;
@@ -784,7 +766,104 @@ header .search-box .lupita{
 
     }
 
+    .big_navbar{
+        display: none;
+    }
 
+    .bg-dark{
+        background-color: #000 !important;
+    }
+
+    .d-block{
+        height: 90px;
+    }
+
+    .small_navbar .nombre_head{
+        color: white;
+        font-weight: bold;
+        font-size: 30px;
+        margin-top: 0.7rem;
+        margin-left: 1rem;
+    }
+
+   
+
+
+    nav ul {
+        background-color: rgba(0, 0, 0, 0);
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        flex-direction: column;
+        list-style: none;
+        padding: 0;
+    }
+    
+    nav ul li {
+        width: 100%;
+        margin: 0;
+    }
+    
+    nav ul li a {
+        display: block;
+        padding: 15px;
+        margin: 5px 0;
+        color: white;
+        font-size: 18px;
+        font-weight: 500;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        background-color: #333;
+        border-radius: 5px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+    
+    nav ul li a:hover {
+        background-color: #444;
+        transform: translateY(-2px);
+    }
+    
+    nav ul li a:active {
+        background-color: #555;
+        transform: translateY(0);
+    }
+
+    .search-box{
+        margin-top: 170px;
+        margin-left: -3px;
+    }
+
+    .search-box button {
+        padding: 0px 15px;
+        height: 48px;
+        width: 84px;
+    }
+    .search-box input {
+        height: unset;
+    }
+    .text-bg-dark{
+        background-color: rgb(39, 39, 39);
+    }
+
+    .body_sobrefoot{
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+    }
+    .body_sobrefoot .bsf_text{
+        padding: 2vh 3%;
+        justify-items: center;
+        padding-bottom: 0;
+    }
+    .body_sobrefoot .subscription{
+        margin: 2vh;
+        justify-content: center;
+        width: 90%;
+        max-width: 120%;
+        margin-left: 0;
+    }
     .ruteIndicator {
         font-size: 0.9rem;
         padding: 1rem;
