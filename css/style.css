@@ -3,12 +3,13 @@
     margin: 0;
     padding: 0;
     font-family: "Source Sans 3", sans-serif; /* Fuente global */
+    
 }
 
 body{
     height: 100vh;
     width: 100%;
-    background-color: #f7f7f7;
+    background-color:#e0e0e0;
 }
 
 /* Enlaces */
@@ -607,35 +608,6 @@ header .search-box .lupita{
 
 /* Estilos de la pagina del item*/
 
-/* Reset de CSS */
-
-* {
-    margin: 0;
-    padding: 0;
-    /*background-color:#e0e0e0;*/
-}
-
-header {
-    display: flex;
-    border-style: solid;
-    height: 8rem;
-    align-items: center;
-    justify-content: center;
-    background-color: blue;
-    box-sizing: border-box;
-}
-footer{
-    box-sizing: border-box;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    display: flex;
-    border-style: solid;
-    height: 8rem;
-    align-items: center;
-    justify-content: center;
-    background-color: red;
-}
 
 .ruteIndicator{
     height: 40px;
