@@ -787,7 +787,15 @@ header .search-box .lupita{
     }
 
    
-
+    .offcanvas-body {
+        flex-grow: 1;
+        padding: var(--bs-offcanvas-padding-y) var(--bs-offcanvas-padding-x);
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: space-between;
+    }
 
     nav ul {
         background-color: rgba(0, 0, 0, 0);
@@ -806,7 +814,7 @@ header .search-box .lupita{
     
     nav ul li a {
         display: block;
-        padding: 15px;
+        padding: 10px;
         margin: 5px 0;
         color: white;
         font-size: 18px;
@@ -831,17 +839,20 @@ header .search-box .lupita{
     }
 
     .search-box{
-        margin-top: 170px;
-        margin-left: -3px;
+        display: inline-flex;
+        gap: 5px;
+        align-items: center;
+        width: 100%;
     }
 
     .search-box button {
         padding: 0px 15px;
-        height: 48px;
-        width: 84px;
+        height: 47px;
+        width: auto;
     }
     .search-box input {
         height: unset;
+        width: 100%;
     }
     .text-bg-dark{
         background-color: rgb(39, 39, 39);
@@ -851,6 +862,7 @@ header .search-box .lupita{
         flex-direction: column;
         align-items: center;
         justify-items: center;
+        margin-right: -2%;
     }
     .body_sobrefoot .bsf_text{
         padding: 2vh 3%;
@@ -970,15 +982,15 @@ header .search-box .lupita{
 
     .holder .bot1,
     .holder .bot2 {
-        top: 72%;
+        top: 78%;
     }
 
     .holder .text-overlay2 {
-        top: 50%;
+        top: 53%;
     }
 
     .holder .text-overlay1{
         text-align: center;
-        top: 29%;
+        top: 24%;
     }
 }
