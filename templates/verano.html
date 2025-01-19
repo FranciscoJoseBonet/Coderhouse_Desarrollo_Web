@@ -20,6 +20,7 @@
 <body class="body_background">
 
     <header>
+        <div class="big_navbar">
         <div class="fl_bar">
             <p>Envíos a todo el país!!!</p>
         </div>
@@ -45,7 +46,42 @@
             </nav>
             <hr>
         </div>
+    </div>
     </header>
+
+    <nav class="small_navbar navbar navbar-dark bg-dark d-block d-md-none">
+        <div class="container-fluid">
+            <div class="nombre_head"><p>Crossover.sf</p></div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">MENÚ</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+
+                <div class="offcanvas-body">
+                    <div class="links_small_navbar">
+                        <ul>
+                            <li><a href="../index.html">Inicio</a></li>
+                            <li><a href="productos.html">Productos</a></li>
+                            <li><a href="rebajas.html">Rebajas</a></li>
+                            <li><a href="verano.html">Verano</a></li>
+                            <li><a href="novedades.html">Novedades</a></li>
+                            <li><a href="contacto.html">Contacto</a></li>
+                        </ul>
+                    </div>
+                    <div class="search-box">
+                        <form class="search-box" action="/buscar" method="get">
+                            <input type="Shorts, Camisetas basicas..." name="buscar" placeholder="Escribe aquí..." />
+                            <button type="post"><i class="fa-solid fa-magnifying-glass fa-xs lupita" style="color: #ffffff;"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
 
     <h1>Página con ofertas de verano</h1>
 

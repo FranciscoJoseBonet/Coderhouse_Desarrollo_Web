@@ -20,32 +20,68 @@
 <body>
 
     <header>
-        <div class="fl_bar">
-            <p>Envíos a todo el país!!!</p>
-        </div>
-        <hr>
-        <div class="mid_head">
-            <div class="nombre_head"><p>Crossover.sf</p></div>
-            <form class="search-box" action="/buscar" method="get">
-                <input type="Shorts, Camisetas basicas..." name="buscar" placeholder="Escribe aquí..." />
-                <button type="post"><i class="fa-solid fa-magnifying-glass fa-xs lupita" style="color: #ffffff;"></i></button>
-            </form>
-        </div>
-        <div class="abajo">
-            <nav class="bot_head">
-                <ul>
-                    <li><a><div class="logonav"><img src="assets/img/logo.jpg" alt=""></div></a></li>
-                    <li><a href="templates/productos.html">Productos</a></li>
-                    <li><a href="templates/rebajas.html">Rebajas</a></li>
-                    <li><a href="templates/verano.html">Verano</a></li>
-                    <li><a href="templates/novedades.html">Novedades</a></li>
-                    <li><a href="templates/contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
+        
+        <div class="big_navbar">
+            <div class="fl_bar">
+                <p>Envíos a todo el país!!!</p>
+            </div>
             <hr>
+            <div class="mid_head">
+                <div class="nombre_head"><p>Crossover.sf</p></div>
+                <form class="search-box" action="/buscar" method="get">
+                    <input type="Shorts, Camisetas basicas..." name="buscar" placeholder="Escribe aquí..." />
+                    <button type="post"><i class="fa-solid fa-magnifying-glass fa-xs lupita" style="color: #ffffff;"></i></button>
+                </form>
+            </div>
+            <div class="abajo">
+                <nav class="bot_head">
+                    <ul>
+                        <li><a><div class="logonav"><img src="assets/img/logo.jpg" alt=""></div></a></li>
+                        <li><a href="templates/productos.html">Productos</a></li>
+                        <li><a href="templates/rebajas.html">Rebajas</a></li>
+                        <li><a href="templates/verano.html">Verano</a></li>
+                        <li><a href="templates/novedades.html">Novedades</a></li>
+                        <li><a href="templates/contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+                <hr>
+            </div>
         </div>
-    </header>
 
+    </header>
+    <nav class="small_navbar navbar navbar-dark bg-dark d-block d-md-none">
+        <div class="container-fluid">
+            <div class="nombre_head"><p>Crossover.sf</p></div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">MENÚ</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+
+            <div class="offcanvas-body">
+                <div class="links_small_navbar">
+                    <ul>
+                        <li><a href="templates/productos.html">Productos</a></li>
+                        <li><a href="templates/rebajas.html">Rebajas</a></li>
+                        <li><a href="templates/verano.html">Verano</a></li>
+                        <li><a href="templates/novedades.html">Novedades</a></li>
+                        <li><a href="templates/contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="search-box">
+                    <form class="search-box" action="/buscar" method="get">
+                        <input type="Shorts, Camisetas basicas..." name="buscar" placeholder="Escribe aquí..." />
+                        <button type="post"><i class="fa-solid fa-magnifying-glass fa-xs lupita" style="color: #ffffff;"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        </div>
+    </nav>
+    
     <div class="holder">
         <video src="assets/vid/carousell.mp4" autoplay muted loop></video>
         <div class="text-overlay1">De la web a tu casa, en un solo Click</div>
@@ -133,6 +169,5 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
