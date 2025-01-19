@@ -9,7 +9,7 @@
 body{
     height: 100vh;
     width: 100%;
-    background-color:#e0e0e0;
+    background-color:#dadada;
 }
 
 /* Enlaces */
@@ -699,6 +699,7 @@ header .search-box .lupita{
 .Mitem .R_Mitem .R_Mitem_prize{
     margin-bottom: 30px;
 }
+
 .Mitem .R_Mitem .R_Mitem_prize h2{
     margin: 0;
 }
@@ -715,10 +716,51 @@ header .search-box .lupita{
     bottom:-20px;
 }
 
+.tarjetero{
+    width: 98vw;
+    box-sizing: border-box;
+    margin: 5px auto;
+}
+
+.tarjetero *{
+    height: 35vh;
+    font-weight: bold;
+    height: auto;
+    border-width: 1px;
+    border-color: #30303079;
+    
+}
+
+.card-title {
+    text-align: center;
+}
+.card{
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    padding: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+.card:hover {
+    transform: scale(0.98);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    border-color: #303030;
+}
+.card-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+  }
+
+.card-img-top {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+  }
+
 /*Medias Query*/
 
 @media (max-width: 1024px) {
-
 
     header, footer {
         font-size: 0.9rem;
@@ -862,7 +904,6 @@ header .search-box .lupita{
         flex-direction: column;
         align-items: center;
         justify-items: center;
-        margin-right: -2%;
     }
     .body_sobrefoot .bsf_text{
         padding: 2vh 3%;
@@ -874,7 +915,7 @@ header .search-box .lupita{
         justify-content: center;
         width: 90%;
         max-width: 120%;
-        margin-left: 0;
+        margin-left: 3%;
     }
     .ruteIndicator {
         font-size: 0.9rem;
