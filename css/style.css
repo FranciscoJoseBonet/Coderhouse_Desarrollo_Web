@@ -814,26 +814,63 @@ header .search-box .lupita{
     border-top: 1px solid #444;
 }
 
-.carrusel_items .card{
-    height: auto;
+.filter-body{
+    width: 100%;
+    height: 10vh;
+    background-color: grey;
+    border-bottom: white;
+    border-width: 2px;
+    border-style: solid;   
+    border-left: none;
+    border-right: none; 
+    border-top: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
 
+.filter-body *{
+    margin: 0;
+    justify-items: center;
+}
+
+.filter-txt{
+    padding-top: 2vh;
+    color: #ffffff;
+}
+
+.filter-reset{
+    padding-left: 12%;
+}
+
+.titular-body-productos{
+    font-weight: bold;
+    font-size: 1.3rem;
+    background-color: #2b2b2be0;
+    color: white;
+    margin-bottom: 0;
+    padding: 10px 0;
+    text-align: center;
+}
+
+
+
+.card {
+    height: auto;
+}
 
 .product-img {
     height: 200px;
     object-fit: cover;
 }
 
-.carousel-container{
-    margin: 10px 10px;
-    
+.container {
+    margin-top: 15px;
+    box-sizing: border-box;
+    max-width: 100%;
 }
-.carousel-control-prev {
-    left: -60px;
-}
-.carousel-control-next {
-    right: -60px;
-}
+
 .card-body {
     display: flex;
     flex-direction: column;
@@ -841,16 +878,21 @@ header .search-box .lupita{
     height: 100%;
 }
 
-.card-text{
+.card-text {
     text-align: center;
     margin-bottom: 10px;
 }
-.card-title{
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-/*Medias Query*/
 
+.card {
+    margin-bottom: 20px;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+/*Medias Query*/
 @media (max-width: 1024px) {
 
     header, footer {
@@ -893,9 +935,12 @@ header .search-box .lupita{
 
 @media (max-width: 768px) {
 
-    .card {
-        max-width: 45%; /* Dos cards por fila */
-        min-width: 45%;
+    .card-body {
+        padding: 20px;
+    }
+
+    .filter-body{
+        display:none;
     }
 
     .fa-angles-down {
@@ -1153,5 +1198,11 @@ header .search-box .lupita{
 
     .father_form {
         box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
+    }
+}
+
+@media (max-width: 576px) {
+    .card-body {
+        padding: 15px;
     }
 }

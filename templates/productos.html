@@ -41,7 +41,6 @@
                     <li><a href="contacto.html">Contacto</a></li>
                 </ul>
             </nav>
-            <hr>
         </div>
     </div>
     </header>
@@ -79,79 +78,115 @@
             </div>
         </div>
     </nav>
+    <h1 class="titular-body-productos">Personaliza tu busqueda y encontra esa prenda que mas potencia tu estilo</h1>
+    <div class="filter-body">
+        <!-- Primer Dropdown -->
+        <div class="filter-dropdown-talle">
+            <select class="form-select" id="size" aria-label="Selecciona tu talle">
+              <option selected>Selecciona un talle</option>
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+              <option value="XL">XL</option>
+            </select>
+          </div>
+          <!-- Segundo Dropdown -->
+          <div class="filter-dropdown-categoria">
+            <select class="form-select" id="category" aria-label="Selecciona una categoría">
+              <option selected>Selecciona una categoría</option>
+              <option value="oversize">Remeras Oversize</option>
+              <option value="remeras_comunes">Remeras Comunes</option>
+              <option value="baby_tees">Baby Tees</option>
+              <option value="bermudas">Bermudas</option>
+              <option value="musculosas">Musculosas</option>
+            </select>
+          </div>
+
+        <div class="filter-prize">
+            <p class="filter-txt">Rango de precios</p>
+            <div class="filter-prize-range">
+                <input type="range" class="form-range" id="priceRange" min="0" max="1000" step="10" value="500">
+                <div class="d-flex justify-content-between"></div>
+            </div>
+        </div>
+
+            <!-- Boton de filtro de stock -->
+          <div class="filter-stock">
+            <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+            <label class="btn btn-outline-light" for="btncheck1">En Stock</label>
+          </div>
+          <!-- Boton de reseteo de los filtros -->
+          <div class="filter-reset">
+            <i class="fa-duotone fa-solid fa-rotate-right fa-xl"></i>
+          </div>
+          <!-- Boton de busqueda usando los filtros -->
+          <div class="filter-search">
+            <button type="button" class="btn btn-primary">Buscar</button>
+          </div>
+
+    </div>
 
     
-    <div class="carousel-container">
-    <div id="productCarousel" class="carousel slide">
-        <div class="carousel-inner">
-            <!-- Primera fila de productos -->
-            <div class="carousel-item active">
-                <div class="d-flex flex-wrap justify-content-center gap-3">
-                    <!-- Card 1 -->
-                    <div class="card flex-grow-1" style="max-width: 18rem; min-width: 14rem;">
-                        <img src="../assets/img/Camisas de fibrana/Talle M.jpg" class="card-img-top product-img" alt="Producto 1">
-                        <div class="card-body d-flex flex-column">
-                            <p class="card-text">Camisa de fibrana con diseño flowers blue</p>
-                            <h5 class="card-title">$18,900</h5>
-                            <a href="item.html" class="btn btn-primary mt-auto">Ver más</a>
-                        </div>
-                    </div>
-                    <!-- Card 2 -->
-                    <div class="card flex-grow-1" style="max-width: 18rem; min-width: 14rem;">
-                        <img src="../assets/img/Remerones Oversize/REMERA OVERSIZE FREEDOM LILA.png" class="card-img-top product-img" alt="Producto 2">
-                        <div class="card-body d-flex flex-column">
-                            <p class="card-text">Remerón oversize freedom lila con estampa</p>
-                            <h5 class="card-title">$15,000</h5>
-                            <a href="item.html" class="btn btn-primary mt-auto">Ver más</a>
-                        </div>
-                    </div>
-                    <!-- Card 3 -->
-                    <div class="card flex-grow-1" style="max-width: 18rem; min-width: 14rem;">
-                        <img src="../assets/img/Musculosa Oversize/MUSCULOSA COSMIC CRUDO.png" class="card-img-top product-img" alt="Producto 3">
-                        <div class="card-body d-flex flex-column">
-                            <p class="card-text">Musculosa cosmic oversize celeste con estampa</p>
-                            <h5 class="card-title">$12,600</h5>
-                            <a href="item.html" class="btn btn-primary mt-auto">Ver más</a>
-                        </div>
-                    </div>
+    <div class="container">
+        <div class="d-flex flex-wrap justify-content-center gap-3">
+            <!-- Card 1 -->
+            <div class="card col-12 col-md-6 col-lg-4 col-xl-3" style="max-width: 18rem; min-width: 14rem;">
+                <img src="../assets/img/Camisas de fibrana/Talle M.jpg" class="card-img-top product-img" alt="Producto 1">
+                <div class="card-body d-flex flex-column">
+                    <p class="card-text">Camisa de fibrana con diseño flowers blue</p>
+                    <hr>
+                    <h5 class="card-title">$18,900</h5>
+                    <hr>
+                    <a href="item.html" class="btn btn-primary mt-auto">Ver más</a>
                 </div>
             </div>
-
-            <!-- Segunda fila de productos -->
-            <div class="carousel-item">
-                <div class="d-flex flex-wrap justify-content-center gap-3">
-                    <!-- Card 4 -->
-                    <div class="card flex-grow-1" style="max-width: 18rem; min-width: 14rem;">
-                        <img src="../assets/img/Camisas de fibrana/Talle XL.jpg" class="card-img-top product-img" alt="Producto 4">
-                        <div class="card-body d-flex flex-column">
-                            <p class="card-text">Camisa de fibrana con diseño de hojas</p>
-                            <h5 class="card-title">$16,780</h5>
-                            <a href="item.html" class="btn btn-primary mt-auto">Ver más</a>
-                        </div>
-                    </div>
-                    <!-- Card 5 -->
-                    <div class="card flex-grow-1" style="max-width: 18rem; min-width: 14rem;">
-                        <img src="../assets/img/Bermudas/Bermuda de jean.png" class="card-img-top product-img" alt="Producto 5">
-                        <div class="card-body d-flex flex-column">
-                            <p class="card-text">Bermuda corta de Jean, estilo baggie</p>
-                            <h5 class="card-title">$20,300</h5>
-                            <a href="item.html" class="btn btn-primary mt-auto">Ver más</a>
-                        </div>
-                    </div>
+            <!-- Card 2 -->
+            <div class="card col-12 col-md-6 col-lg-4 col-xl-3" style="max-width: 18rem; min-width: 14rem;">
+                <img src="../assets/img/Remerones Oversize/REMERA OVERSIZE FREEDOM LILA.png" class="card-img-top product-img" alt="Producto 2">
+                <div class="card-body d-flex flex-column">
+                    <p class="card-text">Remerón oversize freedom lila con estampa</p>
+                    <hr>
+                    <h5 class="card-title">$15,000</h5>
+                    <hr>
+                    <a href="item.html" class="btn btn-primary mt-auto">Ver más</a>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="card col-12 col-md-6 col-lg-4 col-xl-3" style="max-width: 18rem; min-width: 14rem;">
+                <img src="../assets/img/Musculosa Oversize/MUSCULOSA COSMIC CRUDO.png" class="card-img-top product-img" alt="Producto 3">
+                <div class="card-body d-flex flex-column">
+                    <p class="card-text">Musculosa cosmic oversize celeste con estampa</p>
+                    <hr>
+                    <h5 class="card-title">$12,600</h5>
+                    <hr>
+                    <a href="item.html" class="btn btn-primary mt-auto">Ver más</a>
+                </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="card col-12 col-md-6 col-lg-4 col-xl-3" style="max-width: 18rem; min-width: 14rem;">
+                <img src="../assets/img/Camisas de fibrana/Talle XL.jpg" class="card-img-top product-img" alt="Producto 4">
+                <div class="card-body d-flex flex-column">
+                    <p class="card-text">Camisa de fibrana con diseño de hojas</p>
+                    <hr>
+                    <h5 class="card-title">$16,780</h5>
+                    <hr>
+                    <a href="item.html" class="btn btn-primary mt-auto">Ver más</a>
+                </div>
+            </div>
+            <!-- Card 5 -->
+            <div class="card col-12 col-md-6 col-lg-4 col-xl-3" style="max-width: 18rem; min-width: 14rem;">
+                <img src="../assets/img/Bermudas/Bermuda de jean.png" class="card-img-top product-img" alt="Producto 5">
+                <div class="card-body d-flex flex-column">
+                    <p class="card-text">Bermuda corta de Jean, estilo baggie</p>
+                    <hr>
+                    <h5 class="card-title">$20,300</h5>
+                    <hr>
+                    <a href="item.html" class="btn btn-primary mt-auto">Ver más</a>
                 </div>
             </div>
         </div>
-        <!-- Controles del carrusel -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Anterior</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Siguiente</span>
-        </button>
     </div>
-</div>
+    
     
     
     <footer>
