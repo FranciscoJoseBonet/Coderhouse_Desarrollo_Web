@@ -589,12 +589,12 @@ header .search-box .lupita{
 .Mitem .L_Mitem .L_Mitem_imgs .mainIMG{
     width: 75%;
     display: flex;
-    padding-top: 8vh;
+    padding-top: 2vh;
     align-items: start;
     justify-content: center;
     border-style: none;
     border-radius: 1%;
-    padding-bottom: 8vh;
+    padding-bottom: 0;
 }
 .Mitem .L_Mitem .L_Mitem_imgs .mainIMG img{
     width: 75%;
@@ -828,7 +828,12 @@ header .search-box .lupita{
     margin: 10px 10px;
     
 }
-
+.carousel-control-prev {
+    left: -60px;
+}
+.carousel-control-next {
+    right: -60px;
+}
 .card-body {
     display: flex;
     flex-direction: column;
@@ -836,6 +841,14 @@ header .search-box .lupita{
     height: 100%;
 }
 
+.card-text{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.card-title{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
 /*Medias Query*/
 
 @media (max-width: 1024px) {
@@ -1025,6 +1038,7 @@ header .search-box .lupita{
     .Mitem {
         flex-direction: column;
         padding: 2rem 2%;
+        padding-top: 0.5rem;
     }
 
     .Mitem .R_Mitem {
@@ -1035,7 +1049,7 @@ header .search-box .lupita{
 
     .Mitem .L_Mitem {
         width: 100%;
-        padding: 1rem;
+        padding: 0;
         height: auto;
     }
 
@@ -1044,6 +1058,7 @@ header .search-box .lupita{
         position: relative;
         top: 0vh;
         width: 100%;
+        
     }
 
     .Mitem .L_Mitem .L_Mitem_imgs .mainIMG img,
