@@ -1,9 +1,10 @@
-/* Reset CSS: elimina los estilos por defecto del navegador */
+/* Reset CSS */
 * {
     margin: 0;
     padding: 0;
-    font-family: "Source Sans 3", sans-serif;
     /* Fuente global */
+    font-family: "Source Sans 3", sans-serif; 
+    
 
 }
 
@@ -137,7 +138,7 @@ header nav .logonav {
 .bot_head ul {
     list-style: none;
 }
-
+/* estilos generales del header */
 header {
     position: sticky;
     top: -100px;
@@ -176,7 +177,7 @@ header {
     margin: 0;
 }
 
-
+/* Estilo del contenedor de busqueda */
 .search-box {
     display: flex;
     align-items: center;
@@ -219,6 +220,7 @@ header {
     height: 26px;
 }
 
+/* Estilos del boton de busqueda */
 header .search-box .lupita {
     position: relative;
     top: -6px;
@@ -244,6 +246,7 @@ header .search-box .lupita {
 
 }
 
+/* Estilos del pie de pagina */
 .topper-foot .fir_foot button a {
     color: white;
     text-decoration: none;
@@ -298,6 +301,7 @@ header .search-box .lupita {
     margin-top: 15px;
 }
 
+/* Estilos del video en la pagina del index */
 .holder {
     position: relative;
     width: 100%;
@@ -340,6 +344,7 @@ header .search-box .lupita {
     z-index: 2;
 }
 
+/* Estilos de los botones sobre el video del index */
 .holder button {
     background-color: #000000;
     padding: 10px 20px;
@@ -386,6 +391,7 @@ header .search-box .lupita {
     margin-left: -80px;
 }
 
+/* Estilos del formulario de contacto */
 .body_contact {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -464,7 +470,7 @@ header .search-box .lupita {
     transform: scale(1.02);
 }
 
-
+/* Estilos del pie del formulario de contacto  */
 .footer_form {
     text-align: center;
     font-size: 0.9em;
@@ -472,6 +478,8 @@ header .search-box .lupita {
     color: #ffffff;
 }
 
+
+/* Estilos de la subscripcion por mail en el index */
 .body_sobrefoot {
     background-color: #cccaca;
     height: 200px;
@@ -557,7 +565,7 @@ header .search-box .lupita {
 
 
 
-/* Pagina del item*/
+/* Estilos de la pagina del item*/
 .ruteIndicator {
     height: 40px;
     align-content: center;
@@ -725,6 +733,8 @@ header .search-box .lupita {
     bottom: -20px;
 }
 
+
+/* Estilos de las cards en el index con las categorias de ropa */
 .tarjetero {
     width: 98vw;
     box-sizing: border-box;
@@ -770,6 +780,8 @@ header .search-box .lupita {
     object-fit: cover;
 }
 
+/* Las clases small son las que se muestran cuando el tamaño es menor a 768px */
+/* Titulo sobre las tarjetas en el index */
 .separador-titular-small,
 .titular-body-index {
     width: 100%;
@@ -798,6 +810,7 @@ header .search-box .lupita {
     margin: 0 60px;
 }
 
+/* Estilos del acordión en la pagina de preguntas frecuentes */
 .accordion-container {
     width: 90%;
     margin: 20px auto;
@@ -828,6 +841,7 @@ header .search-box .lupita {
     border-top: 1px solid #444;
 }
 
+/* Estilos del filtro para pantallas medianas y grandes en la pagina de productos */
 .filter-body {
     width: 100%;
     height: 10vh;
@@ -854,8 +868,7 @@ header .search-box .lupita {
     color: #ffffff;
 }
 
-
-
+/* Estilos de las cards de items en la pagina de productos */
 .titular-body-productos {
     font-weight: bold;
     font-size: 1.3rem;
@@ -865,8 +878,6 @@ header .search-box .lupita {
     padding: 10px 0;
     text-align: center;
 }
-
-
 
 .card {
     height: auto;
@@ -907,11 +918,13 @@ header .search-box .lupita {
 /*Medias Query*/
 @media (max-width: 1024px) {
 
+    /* Adaptacion responsive de las letras para el footer y el header */
     header,
     footer {
         font-size: 0.9rem;
     }
 
+    /* Adaptacion responsive del iframe en el footer */
     .thi_foot>iframe {
         height: 200px;
         width: 200px;
@@ -923,6 +936,7 @@ header .search-box .lupita {
         gap: 2rem;
     }
 
+    /* Adaptacion responsive de la pagina del item */
     .Mitem .R_Mitem {
         width: 100%;
         order: 2;
@@ -946,8 +960,10 @@ header .search-box .lupita {
     }
 }
 
+/* Media Query para las pantallas pequeñas */
 @media (max-width: 768px) {
 
+    /* Adaptaciones de filtro y de tarjetas para la pagina de productos con diseño responsive */
     .filter-body-sm {
         display: unset;
     }
@@ -960,6 +976,7 @@ header .search-box .lupita {
         display: none;
     }
 
+    /* Diseño responsive del titulo ubicado en el index */
     .fa-angles-down {
         margin: 0 30px;
         position: relative;
@@ -976,14 +993,15 @@ header .search-box .lupita {
         top: -6px;
     }
 
+    /* Adaptaciones responsive para el diseño del header y el footer en todos los archivos */
     header,
     footer {
         flex-direction: column;
         justify-content: center;
         height: auto;
-
     }
 
+    /* Cambio y correccion del diseño de navbar para todo el sitio - diseño responsive */
     .big_navbar {
         display: none;
     }
@@ -1004,7 +1022,7 @@ header .search-box .lupita {
         margin-left: 1rem;
     }
 
-
+    /* Cuerpo del menu responsive para dispositivos pequeños */
     .offcanvas-body {
         flex-grow: 1;
         padding: var(--bs-offcanvas-padding-y) var(--bs-offcanvas-padding-x);
@@ -1033,7 +1051,7 @@ header .search-box .lupita {
         transition: background-color 0.3s ease, transform 0.4s ease;
     }
 
-    /* Dropdown menu */
+    /* Dropdown menu del navbar responsive */
     .links_small_navbar .dropdown-menu {
         background-color: rgb(39, 39, 39);
         border: none;
@@ -1058,6 +1076,7 @@ header .search-box .lupita {
         background-color: #202020;
     }
 
+    /* Diseño responsive del filtro de la pagina de productos para pantallas pequeñas */
     .filter-body-sm {
         background-color: #292929;
         padding: 15px;
@@ -1090,8 +1109,6 @@ header .search-box .lupita {
     .filter-reset {
         width: 18%;
     }
-
-
 
 
     .filter-dropdown-talle select,
@@ -1140,7 +1157,7 @@ header .search-box .lupita {
         background-color: #0056b3;
     }
 
-
+    /* Diseño mejorado del aspecto de los elementos del menu responsive */
     nav ul {
         background-color: rgba(0, 0, 0, 0);
         display: flex;
@@ -1182,6 +1199,7 @@ header .search-box .lupita {
         transform: translateY(0);
     }
 
+    /* Diseño de las barras de busqueda en los encabezados */
     .search-box {
         display: inline-flex;
         gap: 5px;
@@ -1205,6 +1223,7 @@ header .search-box .lupita {
     }
 
 
+    /* Diseño responsive de la caja de subscripcion en el index */
     .body_sobrefoot {
         flex-direction: column;
         align-items: center;
@@ -1225,6 +1244,7 @@ header .search-box .lupita {
         margin-left: 3%;
     }
 
+    /* Adaptaciones de la resolucion mas pequeña en la página del item */
     .ruteIndicator {
         font-size: 0.9rem;
         padding: 1rem;
@@ -1305,6 +1325,7 @@ header .search-box .lupita {
         border-radius: 1%;
     }
 
+    /* Adaptacion de elementos del footer para la resolucion de 768px */
     .topper-foot {
         display: flex;
         justify-content: space-evenly;
@@ -1335,6 +1356,8 @@ header .search-box .lupita {
         text-decoration: none;
     }
 
+
+    /* Correccion de tamaños y relaciones entre los elementos del holder de la pantalla del index */
     .holder .bot1,
     .holder .bot2 {
         top: 78%;
@@ -1356,6 +1379,7 @@ header .search-box .lupita {
     }
 }
 
+/* Media query para mejorar la adaptacion del diseño de tarjetas a dispositivos moviles */
 @media (max-width: 576px) {
     .card-body {
         padding: 15px;
