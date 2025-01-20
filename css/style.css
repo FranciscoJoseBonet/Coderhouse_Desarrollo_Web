@@ -1043,7 +1043,7 @@ header .search-box .lupita{
     padding: 15px;
     border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-bottom: 30px;
+    margin-bottom: 8vh;
 }
 
 .filter-body-sm h2 {
@@ -1235,6 +1235,7 @@ header .search-box .lupita{
         width: 90%;
         position: relative;
         top: 0vh;
+        height: 140vh;
     }
 
     .Mitem .L_Mitem .L_Mitem_imgs .L_Mitem_imgs_extras {
