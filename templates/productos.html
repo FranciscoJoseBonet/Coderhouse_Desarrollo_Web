@@ -76,9 +76,10 @@
     
                     <div class="filter-body-sm">
                         <h2>Filtros</h2>
+                        <div class="filter-group1" style="width: 100%; display: flex; gap: 10px;">
                         <div class="filter-dropdown-talle">
                             <select class="form-select" id="size" aria-label="Selecciona tu talle">
-                                <option selected>Selecciona un talle</option>
+                                <option selected>Talle</option>
                                 <option value="S">S</option>
                                 <option value="M">M</option>
                                 <option value="L">L</option>
@@ -87,7 +88,7 @@
                         </div>
                         <div class="filter-dropdown-categoria">
                             <select class="form-select" id="category" aria-label="Selecciona una categoría">
-                                <option selected>Selecciona una categoría</option>
+                                <option selected>Categoría</option>
                                 <option value="oversize">Remeras Oversize</option>
                                 <option value="remeras_comunes">Remeras Comunes</option>
                                 <option value="baby_tees">Baby Tees</option>
@@ -95,12 +96,14 @@
                                 <option value="musculosas">Musculosas</option>
                             </select>
                         </div>
+                    </div>
                         <div class="filter-prize">
                             <p class="filter-txt">Rango de precios</p>
                             <div class="filter-prize-range">
                                 <input type="range" class="form-range" id="priceRange" min="0" max="1000" step="10" value="500">
                             </div>
                         </div>
+                        <div class="filter-group2" style="width: 100%; display: flex; gap: 10px; align-items: center; justify-content: space-between;">
                         <div class="filter-stock">
                             <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
                             <label class="btn btn-outline-light" for="btncheck1">En Stock</label>
@@ -108,6 +111,7 @@
                         <div class="filter-reset">
                             <i class="fa-duotone fa-solid fa-rotate-right fa-xl"></i>
                         </div>
+                    </div>
                         <div class="filter-search">
                             <button type="button" class="btn btn-primary">Buscar</button>
                         </div>

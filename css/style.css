@@ -1027,10 +1027,11 @@ header .search-box .lupita{
 .links_small_navbar .dropdown-item {
     color: white;
     padding: 10px;
+    margin-bottom: 15px;
     text-align: center;
     transition: background-color 0.3s ease;
     background-color: #505050;
-    border-radius: 5%;
+    border-radius: 1%;
 }
 
 .links_small_navbar .dropdown-item:hover {
@@ -1042,6 +1043,7 @@ header .search-box .lupita{
     padding: 15px;
     border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
 }
 
 .filter-body-sm h2 {
@@ -1059,6 +1061,17 @@ header .search-box .lupita{
     margin-bottom: 15px;
 }
 
+.filter-stock{
+    width: 75%;
+}
+
+.filter-reset{
+    width: 18%;
+}
+
+
+
+
 .filter-dropdown-talle select, 
 .filter-dropdown-categoria select {
     background-color: #333;
@@ -1067,6 +1080,7 @@ header .search-box .lupita{
     border-radius: 5px;
     padding: 8px;
 }
+
 
 .filter-prize p {
     color: white;
@@ -1103,6 +1117,7 @@ header .search-box .lupita{
 .filter-search button:hover {
     background-color: #0056b3;
 }
+
 
     nav ul {
         background-color: rgba(0, 0, 0, 0);
@@ -1164,6 +1179,7 @@ header .search-box .lupita{
     .text-bg-dark{
         background-color: rgb(39, 39, 39);
     }
+    
 
     .body_sobrefoot{
         flex-direction: column;
