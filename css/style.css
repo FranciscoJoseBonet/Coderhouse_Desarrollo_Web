@@ -89,13 +89,13 @@ nav ul li a {
     font-size: 13px;
     font-weight: bold;
     text-transform: uppercase;
-    position: relative; /* Necesario para aplicar efectos de sombra */
-    transition: all 0.3s ease; /* Agregar transición suave */
+    position: relative;
+    transition: all 0.3s ease;
 }
 
 .bot_head li:hover a {
-    color: #000000; /* Cambia el color del texto al pasar el ratón */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra del texto */
+    color: #000000;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 
@@ -311,7 +311,7 @@ header .search-box .lupita{
     transform: translate(-50%, -50%);
     width: 101%;
     height: 100%;
-    object-fit: cover; /* Asegura que el video se ajuste al contenedor */
+    object-fit: cover;
 }
 
 .holder .text-overlay1 {
@@ -368,7 +368,7 @@ header .search-box .lupita{
     text-align: center;
     top: 64%;
     left: 50%;
-    transform: translate(-50%, -50%); /* Ajusta la posición según el tamaño del botón */
+    transform: translate(-50%, -50%);
     z-index: 2;
 }
 
@@ -521,8 +521,8 @@ header .search-box .lupita{
 }
 
 .subscription input[type="submit"]:hover {
-    background-color: #818181; /* Tono más claro al hacer hover */
-    transform: scale(1.05); /* Efecto de escala para destacar el botón */
+    background-color: #818181;
+    transform: scale(1.05);
     color: #303030;
     
 }
@@ -840,9 +840,7 @@ header .search-box .lupita{
     color: #ffffff;
 }
 
-.filter-reset{
-    padding-left: 12%;
-}
+
 
 .titular-body-productos{
     font-weight: bold;
@@ -935,6 +933,10 @@ header .search-box .lupita{
 
 @media (max-width: 768px) {
 
+    .filter-body-sm{
+        display: unset;
+    }
+
     .card-body {
         padding: 20px;
     }
@@ -992,9 +994,115 @@ header .search-box .lupita{
         overflow-y: auto;
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        gap: 15px;
         justify-content: space-between;
     }
+    .offcanvas-body * {
+        width: 100%;
+    }
+
+    .links_small_navbar .dropdown-toggle {
+        background-color: #333;
+        color: white;
+        font-size: 18px;
+        font-weight: 500;
+        text-align: center;
+        text-transform: uppercase;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: background-color 0.3s ease, transform 0.4s ease;
+    }
+    /* Dropdown menu */
+.links_small_navbar .dropdown-menu {
+    background-color: rgb(39, 39, 39);
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    height: auto;
+    padding: 10px;
+
+}
+.links_small_navbar .dropdown-item {
+    color: white;
+    padding: 10px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    background-color: #505050;
+    border-radius: 5%;
+}
+
+.links_small_navbar .dropdown-item:hover {
+    background-color: #202020;
+}
+
+.filter-body-sm {
+    background-color: #292929;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.filter-body-sm h2 {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.filter-dropdown-talle, 
+.filter-dropdown-categoria, 
+.filter-prize, 
+.filter-stock, 
+.filter-reset, 
+.filter-search {
+    margin-bottom: 15px;
+}
+
+.filter-dropdown-talle select, 
+.filter-dropdown-categoria select {
+    background-color: #333;
+    color: white;
+    border: 1px solid #444;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+.filter-prize p {
+    color: white;
+    font-size: 16px;
+}
+
+.filter-prize-range input {
+    width: 100%;
+    background: transparent;
+}
+
+.filter-stock label {
+    font-size: 16px;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.filter-stock label:hover {
+    background-color: #444;
+}
+
+.filter-search button {
+    width: 100%;
+    background-color: #0069d9;
+    border: none;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.filter-search button:hover {
+    background-color: #0056b3;
+}
 
     nav ul {
         background-color: rgba(0, 0, 0, 0);
