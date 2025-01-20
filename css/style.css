@@ -1085,12 +1085,14 @@ header .search-box .lupita{
     }
 
     .holder .text-overlay2 {
-        top: 53%;
+        top: 48%;
+        width: 75%;
     }
 
     .holder .text-overlay1{
         text-align: center;
-        top: 24%;
+        top: 26%;
+        width: 75%;
     }
 
     .father_form {
