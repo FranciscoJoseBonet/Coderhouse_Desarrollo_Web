@@ -814,7 +814,27 @@ header .search-box .lupita{
     border-top: 1px solid #444;
 }
 
+.carrusel_items .card{
+    height: auto;
+}
 
+
+.product-img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.carousel-container{
+    margin: 10px 10px;
+    
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
 
 /*Medias Query*/
 
@@ -859,6 +879,11 @@ header .search-box .lupita{
 }
 
 @media (max-width: 768px) {
+
+    .card {
+        max-width: 45%; /* Dos cards por fila */
+        min-width: 45%;
+    }
 
     .fa-angles-down {
         margin: 0 30px;
