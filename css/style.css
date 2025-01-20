@@ -1235,7 +1235,8 @@ header .search-box .lupita{
         width: 90%;
         position: relative;
         top: 0vh;
-        height: 140vh;
+        aspect-ratio: auto;
+        
     }
 
     .Mitem .L_Mitem .L_Mitem_imgs .L_Mitem_imgs_extras {
