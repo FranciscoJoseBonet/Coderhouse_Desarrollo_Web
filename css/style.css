@@ -775,7 +775,6 @@ header .search-box .lupita{
     text-transform: uppercase;
     color: rgb(0, 0, 0);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.562);
-    animation: textEffect 3s ease-in-out infinite;
   }
   .separador-titular-small{
     display: none;
@@ -784,21 +783,37 @@ header .search-box .lupita{
   .fa-angles-down {
     margin: 0 60px;
   }
-/*Keyframes de animaciones*/
-  @keyframes textEffect {
-    0% {
-      transform: translateY(0);
-      opacity: 1;
-    }
-    50% {
-      transform: translateY(-10px);
-      opacity: 0.7;
-    }
-    100% {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
+
+  .accordion-container {
+    width: 90%;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.459);
+}
+
+.accordion-button {
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: #1f1f1f;
+    color: #f8f9fa;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.accordion-button:hover {
+    background-color: #8a8a8a;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: rgb(223, 223, 223);
+}
+
+.accordion-body {
+    background-color: #34394b;
+    color: #cecece;
+    border-top: 1px solid #444;
+}
+
 
 
 /*Medias Query*/
@@ -857,7 +872,8 @@ header .search-box .lupita{
 
     .separador-titular-small{
         display: unset;
-        
+        position: relative;
+        top: -6px;
     }
     header, footer {
         flex-direction: column;
