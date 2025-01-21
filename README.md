@@ -14,4 +14,4 @@ Here're some of the project's features:
 
 <h2>🛡️ License:</h2>
 
-This project have no license, is only an interest impulsed dedvelopment :)
+This project have no license, is only an interest impulsed developed project :)
