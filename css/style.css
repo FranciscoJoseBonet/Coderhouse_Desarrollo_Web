@@ -854,13 +854,49 @@ header .search-box .lupita {
     border-top: none;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
 .filter-body * {
     margin: 0;
     justify-items: center;
+}
+
+.filter-firstbox{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.filter-firstbox .form-select {
+    width: 100px;
+}
+
+.filter-firstbox .filter-prize *{
+    height: 20px;
+}
+
+.filter-firstbox .filter-prize .filter-txt{
+    padding-top: 0;
+}
+.filter-firstbox .filter-stock{
+    padding-top: 0;
+}
+.filter-secondbox{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.filter-secondbox .filter-reset{
+    margin-top: 4px;
+}
+.form-switch .form-check-input {
+    transition: none;
+    padding: 11px;
+    width: 45px;
+    margin-right: 10px;
 }
 
 .filter-txt {
@@ -1117,6 +1153,7 @@ header .search-box .lupita {
 
     .filter-reset {
         width: 18%;
+        margin-left: 180px;
     }
 
 

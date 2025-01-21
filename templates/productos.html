@@ -147,55 +147,57 @@
 
     <!-- Barra de filtrado para pantallas md y lg -->
     <div class=" p-3 d-flex justify-content-between align-items-center bg-dark border-bottom border-light filter-body">
-        <!-- Primer Dropdown -->
-        <div class="filter-dropdown-talle">
-            <select class="form-select" id="size" aria-label="Selecciona tu talle">
-                <option selected>Talle</option>
-                <option value="S">S</option>
-                <option value="M">M</option>
-                <option value="L">L</option>
-                <option value="XL">XL</option>
-            </select>
-        </div>
-    
-        <!-- Segundo Dropdown -->
-        <div class="filter-dropdown-categoria">
-            <select class="form-select" id="category" aria-label="Selecciona una categoría">
-                <option selected>Categoría</option>
-                <option value="oversize">Remeras Oversize</option>
-                <option value="remeras_comunes">Remeras Comunes</option>
-                <option value="baby_tees">Baby Tees</option>
-                <option value="bermudas">Bermudas</option>
-                <option value="musculosas">Musculosas</option>
-            </select>
-        </div>
-    
-        <!-- Filtro de precios -->
-        <div class="filter-prize">
-            <p class="filter-txt text-white">Rango de precios</p>
-            <div class="filter-prize-range d-flex align-items-center">
-                <input type="range" class="form-range" id="priceRange" min="0" max="1000" step="10" value="500">
-                <span class="ms-2 text-white">500</span>
+        <div class="filter-firstbox">
+            <!-- Primer Dropdown -->
+            <div class="filter-dropdown-talle">
+                <select class="form-select" id="size" aria-label="Selecciona tu talle">
+                    <option selected>Talle</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+            </div>
+
+            <!-- Segundo Dropdown -->
+            <div class="filter-dropdown-categoria">
+                <select class="form-select" id="category" aria-label="Selecciona una categoría">
+                    <option selected>Categoría</option>
+                    <option value="oversize">Remeras Oversize</option>
+                    <option value="remeras_comunes">Remeras Comunes</option>
+                    <option value="baby_tees">Baby Tees</option>
+                    <option value="bermudas">Bermudas</option>
+                    <option value="musculosas">Musculosas</option>
+                </select>
+            </div>
+
+            <!-- Filtro de precios -->
+            <div class="filter-prize">
+                <p class="filter-txt text-white">Rango de precios</p>
+                <div class="filter-prize-range d-flex align-items-center">
+                    <input type="range" class="form-range" id="priceRange" min="0" max="1000" step="10" value="500">
+                </div>
+            </div>
+
+            <!-- Boton de filtro de stock -->
+            <div class="filter-stock form-check form-switch">
+                <input type="checkbox" class="form-check-input" id="btncheck1" autocomplete="off">
+                <label class="form-check-label text-white" for="btncheck1">En Stock</label>
             </div>
         </div>
-    
-        <!-- Boton de filtro de stock -->
-        <div class="filter-stock form-check form-switch">
-            <input type="checkbox" class="form-check-input" id="btncheck1" autocomplete="off">
-            <label class="form-check-label text-white" for="btncheck1">En Stock</label>
-        </div>
-    
-        <!-- Boton de reseteo de los filtros -->
-        <div class="filter-reset">
-            <button class="btn btn-outline-light"><i class="fa-duotone fa-rotate-right fa-xl"></i> Resetear</button>
-        </div>
-    
-        <!-- Boton de busqueda usando los filtros -->
-        <div class="filter-search">
-            <button type="button" class="btn btn-primary">Buscar</button>
+        <div class="filter-secondbox">
+            <!-- Boton de reseteo de los filtros -->
+            <div class="filter-reset">
+                <i class="fa-duotone fa-solid fa-rotate-right fa-xl text-white"></i>
+            </div>
+
+            <!-- Boton de busqueda usando los filtros -->
+            <div class="filter-search">
+                <button type="button" class="btn btn-primary">Buscar</button>
+            </div>
         </div>
     </div>
-    
+
 
     <!-- items -->
     <div class="container">
@@ -250,7 +252,8 @@
             </div>
             <!-- Card 5 -->
             <div class="card col-12 col-md-6 col-lg-4 col-xl-3" style="max-width: 18rem; min-width: 14rem;">
-                <img src="../assets/img/Bermudas/Bermuda de jean.png" class="card-img-top product-img" alt="Bermuda-de-jean">
+                <img src="../assets/img/Bermudas/Bermuda de jean.png" class="card-img-top product-img"
+                    alt="Bermuda-de-jean">
                 <div class="card-body d-flex flex-column">
                     <p class="card-text">Bermuda corta de Jean, estilo baggie</p>
                     <hr>
