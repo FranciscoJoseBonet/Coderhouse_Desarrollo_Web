@@ -868,6 +868,15 @@ header .search-box .lupita {
     color: #ffffff;
 }
 
+.filter-dropdown-categoria .form-select,
+.filter-dropdown-talle .form-select{
+    background-color: #333;
+    color: white;
+    border: 1px solid #444;
+    border-radius: 5px;
+    padding: 8px;
+}
+
 /* Estilos de las cards de items en la pagina de productos */
 .titular-body-productos {
     font-weight: bold;
@@ -973,7 +982,7 @@ header .search-box .lupita {
     }
 
     .filter-body {
-        display: none;
+        display: none !important;
     }
 
     /* Diseño responsive del titulo ubicado en el index */

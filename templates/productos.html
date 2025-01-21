@@ -146,23 +146,22 @@
     <h1 class="titular-body-productos d-block d-md-none h-auto">Personaliza tu busqueda</h1>
 
     <!-- Barra de filtrado para pantallas md y lg -->
-    <div class="filter-body">
-
+    <div class=" p-3 d-flex justify-content-between align-items-center bg-dark border-bottom border-light filter-body">
         <!-- Primer Dropdown -->
         <div class="filter-dropdown-talle">
             <select class="form-select" id="size" aria-label="Selecciona tu talle">
-                <option selected>Selecciona un talle</option>
+                <option selected>Talle</option>
                 <option value="S">S</option>
                 <option value="M">M</option>
                 <option value="L">L</option>
                 <option value="XL">XL</option>
             </select>
         </div>
-
+    
         <!-- Segundo Dropdown -->
         <div class="filter-dropdown-categoria">
             <select class="form-select" id="category" aria-label="Selecciona una categoría">
-                <option selected>Selecciona una categoría</option>
+                <option selected>Categoría</option>
                 <option value="oversize">Remeras Oversize</option>
                 <option value="remeras_comunes">Remeras Comunes</option>
                 <option value="baby_tees">Baby Tees</option>
@@ -170,34 +169,35 @@
                 <option value="musculosas">Musculosas</option>
             </select>
         </div>
-
+    
         <!-- Filtro de precios -->
         <div class="filter-prize">
-            <p class="filter-txt">Rango de precios</p>
-            <div class="filter-prize-range">
+            <p class="filter-txt text-white">Rango de precios</p>
+            <div class="filter-prize-range d-flex align-items-center">
                 <input type="range" class="form-range" id="priceRange" min="0" max="1000" step="10" value="500">
-                <div class="d-flex justify-content-between"></div>
+                <span class="ms-2 text-white">500</span>
             </div>
         </div>
-
+    
         <!-- Boton de filtro de stock -->
-        <div class="filter-stock">
-            <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
-            <label class="btn btn-outline-light" for="btncheck1">En Stock</label>
+        <div class="filter-stock form-check form-switch">
+            <input type="checkbox" class="form-check-input" id="btncheck1" autocomplete="off">
+            <label class="form-check-label text-white" for="btncheck1">En Stock</label>
         </div>
-
+    
         <!-- Boton de reseteo de los filtros -->
         <div class="filter-reset">
-            <i class="fa-duotone fa-solid fa-rotate-right fa-xl"></i>
+            <button class="btn btn-outline-light"><i class="fa-duotone fa-rotate-right fa-xl"></i> Resetear</button>
         </div>
-
+    
         <!-- Boton de busqueda usando los filtros -->
         <div class="filter-search">
             <button type="button" class="btn btn-primary">Buscar</button>
         </div>
     </div>
+    
 
-
+    <!-- items -->
     <div class="container">
         <div class="d-flex flex-wrap justify-content-center gap-3">
             <!-- Card 1 -->
