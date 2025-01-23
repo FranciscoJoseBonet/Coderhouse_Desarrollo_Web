@@ -1,0 +1,72 @@
+// main.scss
+@charset "UTF-8";
+
+// IMPORTAR VARIABLES
+@import 'variables';
+
+// ↓↓↓ Mantén tus comentarios “grandes” para que aparezcan en el CSS final ↓↓↓
+
+/*! Reset CSS */
+/*! Enlaces */
+/*! Footer */
+/*! Barra flexible */
+/*! Navegación */
+/*! Logo en el nav */
+/*! Header */
+/*! Encabezado medio */
+/*! Botón de navegación */
+/*! estilos generales del header */
+/*! Pie de página */
+/*! Estilo del contenedor de busqueda */
+/*! Estilo para el input de búsqueda */
+/*! Estilo para el botón */
+/*! Estilos del boton de busqueda */
+/*! Estilos del pie de pagina */
+/*! Estilos del video en la pagina del index */
+/*! Estilos de los botones sobre el video del index */
+/*! Estilos del formulario de contacto */
+/*! Estilos del pie del formulario de contacto  */
+/*! Estilos de la subscripcion por mail en el index */
+/*! Estilos de la pagina del item*/
+/*! Estilos de las cards en el index con las categorias de ropa */
+/*! Las clases small son las que se muestran cuando el tamaño es menor a 768px */
+/*! Titulo sobre las tarjetas en el index */
+/*! Estilos del acordión en la pagina de preguntas frecuentes */
+/*! Estilos del filtro para pantallas medianas y grandes en la pagina de productos */
+/*! Estilos de las cards de items en la pagina de productos */
+/*!Medias Query*/
+/*! Adaptacion responsive de las letras para el footer y el header */
+/*! Adaptacion responsive del iframe en el footer */
+/*!Responsive de la pagina del item*/
+/*! Adaptacion responsive de la pagina del item */
+/*! Media Query para las pantallas pequeñas */
+/*! Adaptaciones de filtro y de tarjetas para la pagina de productos con diseño responsive */
+/*! Diseño responsive del titulo ubicado en el index */
+/*! Adaptaciones responsive para el diseño del header y el footer en todos los archivos */
+/*! Cambio y correccion del diseño de navbar para todo el sitio - diseño responsive */
+/*! Cuerpo del menu responsive para dispositivos pequeños */
+/*! Dropdown menu del navbar responsive */
+/*! Diseño responsive del filtro de la pagina de productos para pantallas pequeñas */
+/*! Diseño mejorado del aspecto de los elementos del menu responsive */
+/*! Diseño de las barras de busqueda en los encabezados */
+/*! Diseño responsive de la caja de subscripcion en el index */
+/*! Adaptaciones de la resolucion mas pequeña en la página del item */
+/*! Ocultar secciones de detalles y comentarios */
+/*! Adaptacion de elementos del footer para la resolucion de 768px */
+/*! Estilo de los títulos en el footer */
+/*! Correccion de tamaños y relaciones entre los elementos del holder de la pantalla del index */
+/*! Media query para mejorar la adaptacion del diseño de tarjetas a dispositivos moviles */
+
+// IMPORTAR LOS PARCIALES EN EL ORDEN EN QUE APARECE EL CÓDIGO
+@import 'reset';         // *{ ... } 
+@import 'header';        // .bot_head, .fl_bar, nav, header, .mid_head
+@import '_holder-index';
+@import 'footer';        // footer, .topper-foot, .sec_foot, .fir_foot, .thi_foot...
+@import 'search-box';    // .search-box
+@import 'forms';         // .body_contact, .father_form, .footer_form
+@import 'body_sobrefoot';// .body_sobrefoot, .subscription
+@import 'item';          // .item, .Mitem
+@import 'cards';         // .tarjetero, .card, ...
+@import 'accordion';     // .accordion-container
+@import 'filter';        // .filter-body, .filter-body-sm
+@import 'mediaqueries';  // Todos los @media que tenías al final

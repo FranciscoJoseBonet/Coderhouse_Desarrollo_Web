@@ -1,0 +1,29 @@
+// _accordion.scss
+
+.accordion-container {
+  width: 90%;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.459);
+}
+
+.accordion-button {
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: #1f1f1f;
+  color: $color_12;
+  border: none;
+  transition: background-color 0.3s ease;
+  &:hover {
+    background-color: #8a8a8a;
+  }
+  &:not(.collapsed) {
+    background-color: rgb(223, 223, 223);
+  }
+}
+
+.accordion-body {
+  background-color: #34394b;
+  color: $color_13;
+  border-top: 1px solid #444;
+}

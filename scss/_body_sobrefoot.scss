@@ -1,0 +1,75 @@
+// _body_sobrefoot.scss
+
+.body_sobrefoot {
+    background-color: #cccaca;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    padding: 2%;
+    .bsf_text {
+      order: 1;
+      align-content: center;
+      padding: 0 18px;
+      flex-grow: 0;
+    }
+    .subscription {
+      order: 2;
+      background-color: #f4f4f4;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-grow: 1;
+      max-width: 35%;
+      margin-left: auto;
+    }
+  }
+  
+  .subscription {
+    form {
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      padding: 3% 5%;
+    }
+    input[type="submit"] {
+      background-color: #000000;
+      padding: 0px 21px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 18px;
+      color: $color_9;
+      height: 45px;
+      transition: background-color 0.3s, transform 0.2s;
+      &:hover {
+        background-color: #818181;
+        transform: scale(1.05);
+        color: $color_10;
+      }
+    }
+    input[type="email"] {
+      height: 45px;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+      box-sizing: border-box;
+      background-color: rgba(255, 255, 255, 0.8);
+      transition: border-color 0.3s, box-shadow 0.3s;
+      &:hover {
+        border-color: #000000;
+        outline: none;
+        box-shadow: 0 0 5px rgba(142, 68, 173, 0.5);
+      }
+      &:focus {
+        border-color: #6C5B7B;
+        box-shadow: 0 0 5px rgba(142, 68, 173, 0.7);
+      }
+    }
+  }
+  

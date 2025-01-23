@@ -1,6 +1,7 @@
+// _variables.scss
 
-
-// Colores:
+$font-family_1: "Source Sans 3", sans-serif;
+$font-family_2: Arial, sans-serif;
 
 $color_1: rgb(0, 0, 0);
 $color_2: #f7f7f7;
@@ -15,6 +16,4 @@ $color_10: #303030;
 $color_11: #000;
 $color_12: #f8f9fa;
 $color_13: #e4e1e1;
-$color_14: black;
-$font-family_1: "Source Sans 3", sans-serif;
-$font-family_2: Arial, sans-serif;
+$color_14: black; // si aparecía en @media (max-width: 768px)

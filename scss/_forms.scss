@@ -1,0 +1,106 @@
+// _forms.scss
+
+.body_contact {
+  font-family: $font-family_2;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #d1cfcf, #152841);
+  color: $color_6;
+}
+
+.father_form {
+  background-image: url(../img/form_background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 450px;
+  h1 {
+    text-align: center;
+    color: $color_7;
+    font-size: 2em;
+    margin-bottom: 25px;
+    font-weight: bold;
+  }
+  label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+    color: $color_7;
+  }
+  input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.8);
+    &:focus {
+      border-color: #3a3a3a;
+      outline: none;
+      box-shadow: 0 0 5px rgba(142, 68, 173, 0.5);
+    }
+  }
+  input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.8);
+    &:focus {
+      border-color: #3a3a3a;
+      outline: none;
+      box-shadow: 0 0 5px rgba(142, 68, 173, 0.5);
+    }
+  }
+  textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.8);
+    &:focus {
+      border-color: #3a3a3a;
+      outline: none;
+      box-shadow: 0 0 5px rgba(142, 68, 173, 0.5);
+    }
+  }
+  input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(345deg, #3a3053, #a8a8a8);
+    color: $color_8;
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    &:hover {
+      background: linear-gradient(345deg, #5f4e88, #a8a8a8);
+      transform: scale(1.02);
+    }
+  }
+}
+
+.footer_form {
+  text-align: center;
+  font-size: 0.9em;
+  margin-top: 20px;
+  color: $color_9;
+}
