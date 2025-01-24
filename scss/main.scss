@@ -11,19 +11,19 @@
 
 // 3. Layout
 // Estilos principales de la estructura del sitio
-@import 'layout/header';        // Header y navegación
+@import 'layout/header'; // Header y navegación
 @import 'layout/holder-index'; // Sección principal del index
-@import 'layout/footer';       // Footer y sus componentes
+@import 'layout/footer'; // Footer y sus componentes
 
 // 4. Components
 // Estilos de elementos reutilizables.
 @import 'components/search-box'; // Barra de búsqueda
-@import 'components/forms';      // Formularios
+@import 'components/forms'; // Formularios
 @import 'components/body_sobrefoot'; // Sección de subscripcion en el index
-@import 'components/item';       // Estilos de items individuales
-@import 'components/cards';      // Estilos de tarjetas
-@import 'components/accordion';  // Acordiones
-@import 'components/filter';     // Filtros
+@import 'components/item'; // Estilos de items individuales
+@import 'components/cards'; // Estilos de tarjetas
+@import 'components/accordion'; // Acordiones
+@import 'components/filter'; // Filtros
 
 // 5. Utils
 // Media queries para diseño responsive
