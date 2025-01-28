@@ -14,18 +14,18 @@
   display: flex;
   gap: 2rem;
   padding: 5vh 4%;
-  background-color: white;
+  background-color: $color_4;
 
   .L_Mitem {
-    background-color: #f5f5f5;
+    background-color: $color_4;
     flex: 1.5;
     order: 1;
     padding: 10px;
     border-style: solid;
     border-width: 0.1px;
-    border-color: #00000046;
+    border-color: $color_14;
     border-radius: 1%;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.247);
+    box-shadow: 0 2px 4px $col_shadow;
 
     .L_Mitem_imgs {
       gap: 10px;
@@ -48,7 +48,7 @@
           border-style: solid;
           border-radius: 2%;
           border-width: 0.1px;
-          border-color: #00000046;
+          border-color: $color_14;
           overflow: hidden;
           transition: transform 0.5s ease;
           &:hover {
@@ -72,11 +72,11 @@
           border-style: solid;
           border-radius: 2%;
           border-width: 0.1px;
-          border-color: #00000046;
+          border-color: $color_14;
           transition: border-color 0.3s ease, box-shadow 0.3s ease;
           &:hover {
-            border-color: rgba(180, 180, 176, 0.822);
-            box-shadow: 0 5px 5px rgb(75, 49, 49);
+            border-color: $color_14;
+            box-shadow: 0 5px 5px $col_shadow;
           }
         }
       }
@@ -94,7 +94,7 @@
       }
       a {
         background-color: inherit;
-        color: $color_11;
+        color: $color_1;
         text-decoration: none;
       }
     }
@@ -107,7 +107,7 @@
       width: 93%;
       align-items: center;
       border: none;
-      border-top: 1.3px solid #000;
+      border-top: 1.3px solid $color_1;
       margin: 0 auto;
       padding: 0;
     }
@@ -118,15 +118,15 @@
       text-decoration: none;
       font-size: 0.8rem;
     }
-    background-color: #e0e0e0;
+    background-color: $color_13;
     height: auto;
     order: 2;
     padding: 1% 2%;
     border-style: solid;
     border-width: 0.1px;
-    border-color: #00000046;
+    border-color: $color_14;
     border-radius: 1%;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.247);
+    box-shadow: 0 2px 4px $col_shadow;
     position: sticky;
     top: 10px;
     width: 30%;

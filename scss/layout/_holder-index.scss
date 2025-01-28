@@ -18,10 +18,10 @@
 		top: 30%;
 		left: 50%;
 		transform: translate(-50%, -50%);
-		color: white;
+		color: $color_4;
 		font-size: 24px;
 		font-weight: bold;
-		text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.753);
+		text-shadow: 2px 2px 5px $col_shadow;
 		z-index: 1;
 	}
 	.text-overlay2 {
@@ -30,19 +30,19 @@
 		top: 45%;
 		left: 50%;
 		transform: translate(-50%, -50%);
-		color: white;
+		color: $color_4;
 		font-size: 18px;
 		text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 		z-index: 2;
 	}
 	button {
-		background-color: #000000;
+		background-color: $color_1;
 		padding: 10px 20px;
 		border: none;
 		border-radius: 5px;
 		cursor: pointer;
 		font-size: 16px;
-		color: white;
+		color: $color_4;
 		height: 52px;
 		width: 150px;
 		font-size: 0.9em;
@@ -50,7 +50,7 @@
 		font-weight: bold;
 		text-transform: uppercase;
 		&:active {
-			background-color: #303030;
+			background-color: $color_10;
 		}
 	}
 	.bot1:active {
@@ -66,10 +66,10 @@
 	}
 	.bot1 {
 		margin-left: 80px;
-		background-color: #f7f7f7;
+		background-color: $color_2;
 		border-style: solid;
 		border-width: 3px;
-		color: rgb(0, 0, 0);
+		color: $color_1;
 	}
 	.bot2 {
 		margin-left: -80px;

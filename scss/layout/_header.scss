@@ -1,7 +1,7 @@
 // _header.scss
 
 .bot_head {
-  border-bottom: 2px solid #000;
+  border-bottom: 2px solid $color_1;
   .logonav {
     img {
       height: 20px;
@@ -18,7 +18,7 @@
     padding: 0;
     padding-top: 4px;
     margin: 0;
-    background-color: white;
+    background-color: $color_4;
     list-style: none;
   }
   li {
@@ -30,8 +30,8 @@
     transition: all 0.3s ease;
     &:hover {
       a {
-        color: $color_3;
-        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        color: $color_1;
+        text-shadow: 2px 2px 5px $col_shadow;
       }
     }
   }
@@ -43,7 +43,7 @@
 .fl_bar {
   position: relative;
   margin-top: 0px;
-  background-color: #000000;
+  background-color: $color_1;
   color: $color_2;
   text-align: center;
   height: 18px;
@@ -59,7 +59,7 @@
 
 nav {
   ul {
-    background-color: rgb(0, 0, 0);
+    background-color: $color_1;
     display: flex;
     align-items: center;
     justify-content: left;
@@ -76,7 +76,7 @@ nav {
 header {
   hr {
     height: 1px;
-    background-color: rgb(70, 70, 70);
+    background-color: $color_3;
     margin: 0;
   }
   nav {
@@ -103,7 +103,7 @@ header {
   justify-content: space-between;
   align-items: center;
   height: 80px;
-  background-color: rgb(0, 0, 0);
+  background-color: $color_1;
   color: $color_4;
   padding: 0 4%;
   padding-top: 15px;

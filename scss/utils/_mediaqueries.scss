@@ -93,7 +93,7 @@ footer {
 }
 
 .bg-dark {
-    background-color: #000 !important;
+    background-color: $color_1 !important;
 }
 
 .d-block {
@@ -101,7 +101,7 @@ footer {
 }
 
 .small_navbar .nombre_head {
-    color: white;
+    color: $color_4;
     font-weight: bold;
     font-size: 30px;
     margin-top: 0.7rem;
@@ -124,8 +124,8 @@ footer {
 }
 
 .links_small_navbar .dropdown-toggle {
-    background-color: #333;
-    color: white;
+    background-color: $color_6;
+    color: $color_4;
     font-size: 18px;
     font-weight: 500;
     text-align: center;
@@ -133,7 +133,7 @@ footer {
     padding: 10px;
     border: none;
     border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px $col_shadow;
     transition: background-color 0.3s ease, transform 0.4s ease;
 }
 

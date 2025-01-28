@@ -9,7 +9,7 @@
     font-weight: bold;
     height: auto;
     border-width: 1px;
-    border-color: #30303079;
+    border-color: $color_10;
   }
 }
 
@@ -21,15 +21,15 @@
   border-radius: 8px;
   transition: all 0.3s ease;
   padding: 10px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 6px $col_shadow;
   height: auto;
   margin-bottom: 20px;
-  border: 1px solid #ddd;
+  border: 1px solid $color_13;
   border-radius: 8px;
   &:hover {
     transform: scale(0.98);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    border-color: #303030;
+    box-shadow: 0 4px 12px $col_shadow;
+    border-color: $color_14;
   }
 }
 
@@ -60,7 +60,7 @@
     font-weight: bold;
     text-transform: uppercase;
     color: $color_1;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.562);
+    text-shadow: 2px 2px 4px $col_shadow;
   }
 }
 
@@ -77,7 +77,7 @@
     font-weight: bold;
     text-transform: uppercase;
     color: $color_1;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.562);
+    text-shadow: 2px 2px 4px $col_shadow;
   }
 }
 
