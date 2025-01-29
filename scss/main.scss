@@ -1,21 +1,17 @@
 // main.scss
 @charset "UTF-8"; // Codificación del archivo
 
-// 1. Variables
 // Variables globales como colores, tipografías, tamaños, etc
 @import 'variables';
 
-// 2. Base
 // Estilos globales para resetear los estilos predeterminados del navegador
 @import 'base/reset';
 
-// 3. Layout
 // Estilos principales de la estructura del sitio
 @import 'layout/header'; // Header y navegación
 @import 'layout/holder-index'; // Sección principal del index
 @import 'layout/footer'; // Footer y sus componentes
 
-// 4. Components
 // Estilos de elementos reutilizables.
 @import 'components/search-box'; // Barra de búsqueda
 @import 'components/forms'; // Formularios
@@ -25,6 +21,5 @@
 @import 'components/accordion'; // Acordiones
 @import 'components/filter'; // Filtros
 
-// 5. Utils
 // Media queries para diseño responsive
 @import 'utils/mediaqueries';

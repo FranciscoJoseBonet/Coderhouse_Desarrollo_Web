@@ -6,13 +6,24 @@
 }
 
 body {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   background-color: #dadada;
 }
 
 a {
   text-decoration: none;
+}
+
+.bot_head ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.bot_head a {
+  color: rgb(0, 0, 0);
+  transition: all 0.3s ease;
 }
 
 .bot_head {
@@ -26,14 +37,8 @@ a {
   margin-left: 50%;
 }
 .bot_head ul {
-  display: flex;
-  align-items: center;
-  list-style: none;
-  padding: 0;
   padding-top: 4px;
-  margin: 0;
   background-color: white;
-  list-style: none;
 }
 .bot_head li {
   margin-right: 5%;
@@ -47,25 +52,20 @@ a {
   color: rgb(0, 0, 0);
   text-shadow: 2px 2px 5px rgba(7, 7, 7, 0.466);
 }
-.bot_head a {
-  color: rgb(0, 0, 0);
-}
-
 .fl_bar {
   position: relative;
-  margin-top: 0px;
   background-color: rgb(0, 0, 0);
   color: #f7f7f7;
   text-align: center;
-  height: 18px;
+  height: 12px;
   font-size: 10px;
   font-weight: bold;
   text-transform: uppercase;
   display: flex;
-  align-items: bottom;
+  align-items: center;
   justify-content: center;
   z-index: 20;
-  padding-top: 3px;
+  padding-top: 19px;
 }
 
 nav ul {
@@ -74,7 +74,6 @@ nav ul {
   align-items: center;
   justify-content: left;
   height: 30px;
-  margin-left: 0px;
 }
 nav ul li a {
   margin-right: 12%;
@@ -82,7 +81,7 @@ nav ul li a {
 
 header {
   position: sticky;
-  top: -100px;
+  top: -79px;
   z-index: 100;
   margin-bottom: 0;
 }
@@ -103,15 +102,31 @@ header .search-box .lupita {
 
 .mid_head {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   height: 80px;
   background-color: rgb(0, 0, 0);
   color: white;
-  padding: 0 4%;
-  padding-top: 15px;
+  padding: 15px 4% 0;
   font-size: 23px;
   font-weight: bold;
+  text-transform: uppercase;
+}
+
+.holder .bot1, .holder .bot2, .holder button {
+  background-color: rgb(0, 0, 0);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  color: white;
+  height: 52px;
+  width: 150px;
+  font-size: 0.9em;
+  padding: 0;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .holder {
@@ -143,39 +158,19 @@ header .search-box .lupita {
 }
 .holder .text-overlay2 {
   position: absolute;
-  text-align: center;
   top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
   font-size: 18px;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  text-shadow: 2px 2px 5px rgba(7, 7, 7, 0.466);
   z-index: 2;
-}
-.holder button {
-  background-color: rgb(0, 0, 0);
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-  color: white;
-  height: 52px;
-  width: 150px;
-  font-size: 0.9em;
-  padding: 0;
-  font-weight: bold;
-  text-transform: uppercase;
 }
 .holder button:active {
   background-color: #303030;
 }
-.holder .bot1:active {
-  background-color: rgb(218, 218, 218);
-}
 .holder .bot1, .holder .bot2 {
   position: absolute;
-  text-align: center;
   top: 64%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -187,6 +182,9 @@ header .search-box .lupita {
   border-style: solid;
   border-width: 3px;
   color: rgb(0, 0, 0);
+}
+.holder .bot1:active {
+  background-color: #dfdfdf;
 }
 .holder .bot2 {
   margin-left: -80px;
@@ -917,10 +915,10 @@ footer a {
 @media (max-width: 768px) {
   .filter-body-sm {
     display: unset;
-    background-color: #292929;
+    background-color: #303030;
     padding: 15px;
     border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(7, 7, 7, 0.466);
   }
   .filter-body-sm h2 {
     color: white;
@@ -946,6 +944,9 @@ footer a {
     display: unset;
     position: relative;
     top: -20px;
+  }
+  .separador-titular-small h1 {
+    margin-bottom: 1.5rem;
   }
   /* Adaptaciones responsive para el diseño del header y el footer en todos los archivos */
   header,
@@ -999,7 +1000,7 @@ footer a {
   }
   /* Dropdown menu del navbar responsive */
   .links_small_navbar .dropdown-menu {
-    background-color: rgb(39, 39, 39);
+    background-color: #303030;
     border: none;
     border-radius: 5px;
     margin-top: 20px;
@@ -1012,18 +1013,18 @@ footer a {
     margin-bottom: 15px;
     text-align: center;
     transition: background-color 0.3s ease;
-    background-color: #505050;
+    background-color: #585858;
     border-radius: 1%;
   }
   .links_small_navbar .dropdown-item:hover {
-    background-color: #202020;
+    background-color: #2e2e2e;
   }
   /* Diseño responsive del filtro de la pagina de productos para pantallas pequeñas */
   .filter-body-sm {
-    background-color: #292929;
+    background-color: #2e2e2e;
     padding: 15px;
     border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(7, 7, 7, 0.466);
   }
   .filter-body-sm h2 {
     color: white;
@@ -1047,9 +1048,9 @@ footer a {
   }
   .filter-dropdown-talle select,
   .filter-dropdown-categoria select {
-    background-color: #333;
+    background-color: #303030;
     color: white;
-    border: 1px solid #444;
+    border: 1px solid #424242;
     border-radius: 5px;
     padding: 8px;
   }
@@ -1068,11 +1069,11 @@ footer a {
     transition: background-color 0.3s ease;
   }
   .filter-stock label:hover {
-    background-color: #444;
+    background-color: #424242;
   }
   .filter-search button {
     width: 100%;
-    background-color: #0069d9;
+    background-color: #3d4e88;
     border: none;
     color: white;
     padding: 10px;
@@ -1081,11 +1082,11 @@ footer a {
     transition: background-color 0.3s ease;
   }
   .filter-search button:hover {
-    background-color: #0056b3;
+    background-color: #0b2b55;
   }
   /* Diseño mejorado del aspecto de los elementos del menu responsive */
   nav ul {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgb(0, 0, 0);
     display: flex;
     align-items: center;
     justify-content: left;
@@ -1107,17 +1108,17 @@ footer a {
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
-    background-color: #333;
+    background-color: #303030;
     border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(7, 7, 7, 0.466);
     transition: background-color 0.3s ease, transform 0.2s ease;
   }
   nav ul li a:hover {
-    background-color: #444;
+    background-color: #424242;
     transform: translateY(-2px);
   }
   nav ul li a:active {
-    background-color: #555;
+    background-color: #585858;
     transform: translateY(0);
   }
   /* Diseño de las barras de busqueda en los encabezados */
@@ -1137,7 +1138,7 @@ footer a {
     width: 100%;
   }
   .text-bg-dark {
-    background-color: rgb(39, 39, 39);
+    background-color: #303030;
   }
   /* Diseño responsive de la caja de subscripcion en el index */
   .body_sobrefoot {
@@ -1171,7 +1172,7 @@ footer a {
   .Mitem .R_Mitem {
     width: 100%;
     padding: 2rem;
-    background-color: #e0e0e0;
+    background-color: #dfdfdf;
     /* Fondo gris que cubre todo */
   }
   .Mitem .L_Mitem {
@@ -1246,7 +1247,7 @@ footer a {
     margin: 5px 0;
   }
   .sec_foot li a {
-    color: black;
+    color: rgb(0, 0, 0);
     text-decoration: none;
   }
   /* Correccion de tamaños y relaciones entre los elementos del holder de la pantalla del index */
@@ -1264,7 +1265,11 @@ footer a {
     width: 75%;
   }
   .father_form {
-    box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
+    box-shadow: 0 0px 0px rgba(7, 7, 7, 0.466);
+  }
+  .body_contact {
+    min-height: auto;
+    padding: 20px 0;
   }
 }
 @media (max-width: 576px) {

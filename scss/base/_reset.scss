@@ -1,4 +1,4 @@
-// _reset.scss
+// _reset.scss and global styles
 
 * {
   margin: 0;
@@ -7,7 +7,7 @@
 }
 
 body {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   background-color: $bg_color;
 }

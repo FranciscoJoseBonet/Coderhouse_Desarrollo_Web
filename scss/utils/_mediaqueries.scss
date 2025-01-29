@@ -46,10 +46,10 @@
   .filter-body-sm {
     display: unset;
     // Resto de estilos que tenías dentro
-    background-color: #292929;
+    background-color: $color_10;
     padding: 15px;
     border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px $col_shadow;
     h2 {
       color: $color_4;
       font-size: 20px;
@@ -77,8 +77,10 @@
     display: unset;
     position: relative;
     top: -20px;
+    h1 {
+        margin-bottom: 1.5rem;
+    }
 }
-
 /* Adaptaciones responsive para el diseño del header y el footer en todos los archivos */
 header,
 footer {
@@ -139,7 +141,7 @@ footer {
 
 /* Dropdown menu del navbar responsive */
 .links_small_navbar .dropdown-menu {
-    background-color: rgb(39, 39, 39);
+    background-color: $color_10;
     border: none;
     border-radius: 5px;
     margin-top: 20px;
@@ -149,29 +151,29 @@ footer {
 }
 
 .links_small_navbar .dropdown-item {
-    color: white;
+    color: $color_4;
     padding: 10px;
     margin-bottom: 15px;
     text-align: center;
     transition: background-color 0.3s ease;
-    background-color: #505050;
+    background-color: $color_11;
     border-radius: 1%;
 }
 
 .links_small_navbar .dropdown-item:hover {
-    background-color: #202020;
+    background-color: $color_7;
 }
 
 /* Diseño responsive del filtro de la pagina de productos para pantallas pequeñas */
 .filter-body-sm {
-    background-color: #292929;
+    background-color: $color_7;
     padding: 15px;
     border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px $col_shadow;
 }
 
 .filter-body-sm h2 {
-    color: white;
+    color: $color_4;
     font-size: 20px;
     margin-bottom: 15px;
 }
@@ -197,16 +199,16 @@ footer {
 
 .filter-dropdown-talle select,
 .filter-dropdown-categoria select {
-    background-color: #333;
-    color: white;
-    border: 1px solid #444;
+    background-color: $color_10;
+    color: $color_4;
+    border: 1px solid $color_9;
     border-radius: 5px;
     padding: 8px;
 }
 
 
 .filter-prize p {
-    color: white;
+    color: $color_4;
     font-size: 16px;
 }
 
@@ -217,20 +219,20 @@ footer {
 
 .filter-stock label {
     font-size: 16px;
-    color: white;
+    color: $color_4;
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
 
 .filter-stock label:hover {
-    background-color: #444;
+    background-color: $color_9;
 }
 
 .filter-search button {
     width: 100%;
-    background-color: #0069d9;
+    background-color: $button_second_hv;
     border: none;
-    color: white;
+    color: $color_4;
     padding: 10px;
     font-size: 16px;
     border-radius: 5px;
@@ -238,12 +240,12 @@ footer {
 }
 
 .filter-search button:hover {
-    background-color: #0056b3;
+    background-color: $button_second;
 }
 
 /* Diseño mejorado del aspecto de los elementos del menu responsive */
 nav ul {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: $color_1;
     display: flex;
     align-items: center;
     justify-content: left;
@@ -261,25 +263,25 @@ nav ul li a {
     display: block;
     padding: 10px;
     margin: 5px 0;
-    color: white;
+    color: $color_4;
     font-size: 18px;
     font-weight: 500;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
-    background-color: #333;
+    background-color: $color_10;
     border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px $col_shadow;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 nav ul li a:hover {
-    background-color: #444;
+    background-color: $color_9;
     transform: translateY(-2px);
 }
 
 nav ul li a:active {
-    background-color: #555;
+    background-color: $color_11;
     transform: translateY(0);
 }
 
@@ -303,7 +305,7 @@ nav ul li a:active {
 }
 
 .text-bg-dark {
-    background-color: rgb(39, 39, 39);
+    background-color: $color_10;
 }
 
 
@@ -344,7 +346,7 @@ nav ul li a:active {
 .Mitem .R_Mitem {
     width: 100%;
     padding: 2rem;
-    background-color: #e0e0e0;
+    background-color: $color_8;
     /* Fondo gris que cubre todo */
 }
 
@@ -436,7 +438,7 @@ nav ul li a:active {
 }
 
 .sec_foot li a {
-    color: black;
+    color: $color_1;
     text-decoration: none;
 }
 
@@ -459,7 +461,12 @@ nav ul li a:active {
 }
 
 .father_form {
-    box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
+    box-shadow: 0 0px 0px $col_shadow;
+}
+
+.body_contact {
+    min-height: auto;
+    padding: 20px 0;
 }
 }
 
@@ -468,5 +475,4 @@ nav ul li a:active {
   .card-body {
     padding: 15px;
   }
-  // ... etc.
 }
