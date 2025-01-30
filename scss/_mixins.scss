@@ -1,0 +1,289 @@
+@import 'variables';
+
+// 📌 MIXINS DE POSICIONAMIENTO
+@mixin center-absolute($top: 50%) {
+    position: absolute;
+    top: $top;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+// 📌 MIXINS DE TEXTO
+@mixin text-shadow($color: rgba(0, 0, 0, 0.5)) {
+    text-shadow: 2px 2px 5px $color;
+}
+
+@mixin uppercase-bold($size: 13px) {
+    font-size: $size;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+// 📌 MIXINS DE FLEXBOX
+@mixin flexbox($justify: flex-start, $align: stretch, $wrap: nowrap) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-wrap: $wrap;
+}
+
+@mixin flex-center($justify: center) {
+    @include flexbox($justify, center);
+}
+
+// 📌 MIXINS DE BORDES
+@mixin border-bottom($color: black) {
+    border-bottom: 2px solid $color;
+}
+
+// 📌 MIXINS DE BOTONES
+@mixin button($bg-color, $text-color, $hover-color) {
+    background-color: $bg-color;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+
+    a {
+        color: $text-color;
+        text-decoration: none;
+    }
+
+    &:hover {
+        background-color: darken($bg-color, 10%);
+    }
+
+    &:active {
+        transform: scale(0.98);
+        background-color: $hover-color;
+    }
+}
+
+// 📌 MIXIN PARA LISTAS RESET
+@mixin list-reset {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+@mixin flexbox-search($justify: flex-start, $align: stretch, $gap: 0) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    gap: $gap;
+}
+
+@mixin input-style($width: 290px, $border-color: $color_11, $bg-color: $color_9) {
+    color: $color_4;
+    width: $width;
+    padding: 10px;
+    border: 2px solid $border-color;
+    border-radius: 20px;
+    font-size: 13px;
+    outline: none;
+    transition: border-color 0.3s ease;
+    background-color: $bg-color;
+
+    &:focus {
+        border-color: $color_14;
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    }
+
+    &::placeholder {
+        color: $color_5;
+    }
+}
+
+@mixin button-style($bg-color: $color_1, $border-color: $color_10, $hover-color: $color_9) {
+    padding: 2px 15px;
+    background-color: $bg-color;
+    border: solid $border-color;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    height: 26px;
+
+    &:hover {
+        background-color: $hover-color;
+    }
+
+    &:active {
+        transform: scale(0.95);
+    }
+}
+
+@mixin flexbox-item($direction: row, $justify: flex-start, $align: stretch, $gap: 0) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    gap: $gap;
+}
+
+@mixin border-style($color, $width: 0.1px, $radius: 2%) {
+    border: solid $width $color;
+    border-radius: $radius;
+    box-shadow: 0 2px 4px $col_shadow;
+}
+
+@mixin img-style($width: 100%, $hover-scale: 1) {
+    width: $width;
+    height: auto;
+    aspect-ratio: auto;
+    @include border-style($color_14);
+    transition: transform 0.5s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+        transform: scale($hover-scale);
+        border-color: $color_14;
+        box-shadow: 0 5px 5px $col_shadow;
+    }
+}
+
+
+@mixin shared-input-styles {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid $color_14;
+    border-radius: 8px;
+    font-size: 1em;
+    box-sizing: border-box;
+    background-color: $color_8;
+
+    &:focus {
+        border-color: $color_11;
+        outline: none;
+        box-shadow: 0 0 5px $col_shadow;
+    }
+}
+
+@mixin shared-form-styles {
+    background-image: url(../img/form_background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px $col_shadow;
+    width: 100%;
+    max-width: 450px;
+}
+
+@mixin shared-label-styles {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+    color: $color_7;
+}
+
+@mixin shared-button-styles {
+    width: 100%;
+    padding: 12px;
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+
+    &:hover {
+        transform: scale(1.02);
+    }
+}
+
+@mixin border($color: $border-color, $width: $border-width, $style: $border-style) {
+    border-bottom: $color;
+    border-width: $width;
+    border-style: $style;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+}
+
+@mixin select-styles($height: $height-small, $background: $background-color, $color: $color_4) {
+    background-color: $background;
+    color: $color;
+    border: 1px solid $color_9;
+    border-radius: $border-radius;
+    height: $height;
+}
+
+@mixin card-border($color: $color_10, $width: $border-width-card, $radius: $border-radius-card) {
+    border: $width solid $color;
+    border-radius: $radius;
+}
+
+@mixin card-layout($padding: 12px, $shadow: $box-shadow-card) {
+    padding: $padding;
+    box-shadow: $shadow;
+    transition: all $transition-duration ease;
+    height: auto;
+    margin-bottom: 25px;
+}
+
+@mixin card-hover-effect($border-color: $color_14, $shadow: $hover-shadow-card) {
+    &:hover {
+        transform: scale(0.95);
+        box-shadow: $shadow;
+        border-color: $border-color;
+    }
+}
+
+// _mixins.scss
+
+// Mixin para bordes comunes
+@mixin border-common($color, $radius: 8px, $width: 1px) {
+    border: $width solid $color;
+    border-radius: $radius;
+}
+
+// Mixin para fondos con transición
+@mixin background-transition($bg-color, $transition-duration: 0.3s) {
+    background-color: $bg-color;
+    transition: background-color $transition-duration;
+}
+
+// Mixin para inputs comunes
+@mixin input-common($bg-color, $border-color, $padding: 12px, $font-size: 16px) {
+    height: 45px;
+    padding: $padding;
+    border: 1px solid $border-color;
+    border-radius: 8px;
+    font-size: $font-size;
+    box-sizing: border-box;
+    background-color: $bg-color;
+    transition: border-color 0.3s, box-shadow 0.3s;
+
+    &:hover {
+        border-color: $color_1;
+        outline: none;
+        box-shadow: 0 0 5px $col_shadow;
+    }
+
+    &:focus {
+        border-color: $button_second_hv;
+        box-shadow: 0 0 5px $col_shadow;
+    }
+}
+
+// Mixin para botones comunes
+@mixin button-common($bg-color, $hover-color, $font-color, $padding: 0px 21px, $font-size: 18px, $height: 45px) {
+    background-color: $bg-color;
+    padding: $padding;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: $font-size;
+    color: $font-color;
+    height: $height;
+    transition: background-color 0.3s, transform 0.2s;
+
+    &:hover {
+        background-color: $hover-color;
+        transform: scale(1.02);
+        color: $color_1;
+    }
+}

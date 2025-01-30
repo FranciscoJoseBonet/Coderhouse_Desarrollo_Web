@@ -1,19 +1,4 @@
-// Mixins
-@mixin flex-center($justify: center) {
-  display: flex;
-  align-items: center;
-  justify-content: $justify;
-}
-
-@mixin uppercase-bold($size: 13px) {
-  font-size: $size;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-@mixin border-bottom($color) {
-  border-bottom: 2px solid $color;
-}
+@import '../mixins';
 
 %unstyled-list {
   list-style: none;
@@ -30,33 +15,33 @@
   @include border-bottom($color_1);
 
   .logonav img {
-      height: 20px;
-      width: auto;
-      margin-top: 16px;
-      border-radius: 30%;
-      margin-left: 50%;
+    height: 20px;
+    width: auto;
+    margin-top: 16px;
+    border-radius: 30%;
+    margin-left: 50%;
   }
 
   ul {
-      @extend %unstyled-list;
-      padding-top: 4px;
-      background-color: $color_4;
+    @extend %unstyled-list;
+    padding-top: 4px;
+    background-color: $color_4;
   }
 
   li {
-      margin-right: 5%;
-      @include uppercase-bold();
-      position: relative;
-      transition: all 0.3s ease;
+    margin-right: 5%;
+    @include uppercase-bold();
+    position: relative;
+    transition: all 0.3s ease;
 
-      &:hover a {
-          color: $color_1;
-          text-shadow: 2px 2px 5px $col_shadow;
-      }
+    &:hover a {
+      color: $color_1;
+      text-shadow: 2px 2px 5px $col_shadow;
+    }
   }
 
   a {
-      @extend %link-base;
+    @extend %link-base;
   }
 }
 
@@ -78,7 +63,7 @@ nav ul {
   height: 30px;
 
   li a {
-      margin-right: 12%;
+    margin-right: 12%;
   }
 }
 
@@ -89,20 +74,20 @@ header {
   margin-bottom: 0;
 
   hr {
-      height: 1px;
-      background-color: $color_3;
-      margin: 0;
+    height: 1px;
+    background-color: $color_3;
+    margin: 0;
   }
 
   nav .logonav {
-      margin-left: 0;
-      justify-content: center;
+    margin-left: 0;
+    justify-content: center;
   }
 
   .search-box .lupita {
-      position: relative;
-      top: -6px;
-      padding: 0;
+    position: relative;
+    top: -6px;
+    padding: 0;
   }
 }
 

@@ -14,9 +14,11 @@
   color: $color_12;
   border: none;
   transition: background-color 0.5s ease;
+
   &:hover {
     background-color: $color_11;
   }
+
   &:not(.collapsed) {
     color: $color_2;
     background-color: $color_11;

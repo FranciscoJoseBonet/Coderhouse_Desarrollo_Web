@@ -4,6 +4,7 @@
   width: 98vw;
   box-sizing: border-box;
   margin: 5px auto;
+
   * {
     height: 35vh;
     font-weight: bold;
@@ -26,6 +27,7 @@
   margin-bottom: 20px;
   border: 1px solid $color_13;
   border-radius: 8px;
+
   &:hover {
     transform: scale(0.98);
     box-shadow: 0 4px 12px $col_shadow;
@@ -55,6 +57,7 @@
   text-align: center;
   padding-top: 20px;
   display: none;
+
   h1 {
     font-size: 2rem;
     font-weight: bold;
@@ -72,6 +75,7 @@
   align-items: center;
   text-align: center;
   padding-top: 20px;
+
   h1 {
     font-size: 2rem;
     font-weight: bold;

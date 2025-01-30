@@ -1,31 +1,30 @@
 // _body_sobrefoot.scss
+@import '../mixins';
 
 .body_sobrefoot {
-    background-color: $color_14;
-    height: 200px;
-    display: flex;
-    flex-direction: row;
-    height: auto;
-    padding: 2%;
-    .bsf_text {
-      order: 1;
-      align-content: center;
-      padding: 0 18px;
-      flex-grow: 0;
-    }
-    .subscription {
-      order: 2;
-      background-color: $color_8;
-      border-radius: 10px;
-      box-shadow: 0 0 15px $col_shadow;
-      display: flex;
-      flex-grow: 1;
-      max-width: 35%;
-      margin-left: auto;
-    }
+  background-color: $color_14;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  padding: 2%;
+
+  .bsf_text {
+    order: 1;
+    align-content: center;
+    padding: 0 18px;
+    flex-grow: 0;
   }
-  
+
   .subscription {
+    order: 2;
+    @include background-transition($color_8);
+    @include border-common($color_8, 10px, 2px);
+    box-shadow: 0 0 15px $col_shadow;
+    display: flex;
+    flex-grow: 1;
+    max-width: 35%;
+    margin-left: auto;
+
     form {
       display: flex;
       flex-direction: column;
@@ -34,42 +33,15 @@
       width: 100%;
       height: 100%;
       padding: 3% 5%;
+      gap: 7px;
     }
+
     input[type="submit"] {
-      background-color: $color_1;
-      padding: 0px 21px;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      font-size: 18px;
-      color: $color_4;
-      height: 45px;
-      transition: background-color 0.3s, transform 0.2s;
-      &:hover {
-        background-color: $color_11;
-        transform: scale(1.02);
-        color: $color_1;
-      }
+      @include button-common($color_1, $color_11, $color_4);
     }
+
     input[type="email"] {
-      height: 45px;
-      padding: 12px;
-      margin-bottom: 15px;
-      border: 1px solid $color_14;
-      border-radius: 8px;
-      font-size: 16px;
-      box-sizing: border-box;
-      background-color: $color_2;
-      transition: border-color 0.3s, box-shadow 0.3s;
-      &:hover {
-        border-color: $color_1;
-        outline: none;
-        box-shadow: 0 0 5px $col_shadow;
-      }
-      &:focus {
-        border-color: $button_second_hv;
-        box-shadow: 0 0 5px $col_shadow;
-      }
+      @include input-common($color_2, $color_14);
     }
   }
-  
+}

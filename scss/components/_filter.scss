@@ -1,135 +1,121 @@
+@import'../mixins';
+@import'../variables';
+
 // _filter.scss
 
 .filter-body {
-    width: 100%;
-    height: 7vh;
-    background-color: grey;
-    border-bottom: white;
-    border-width: 2px;
-    border-style: solid;
-    border-left: none;
-    border-right: none;
-    border-top: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    * {
-      margin: 0;
-      justify-items: center;
-    }
+  width: 100%;
+  height: $height-medium;
+  background-color: $color_14;
+  @include border;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  * {
+    margin: 0;
+    justify-items: center;
   }
-  
-  .filter-firstbox {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    .form-select {
-      width: 100%;
-      height: 7vh;
-      font-size: 1.4vh;
+}
+
+.filter-firstbox {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  .form-select {
+    width: 100%;
+    height: $height-medium;
+    font-size: 1.4vh;
+  }
+
+  .filter-prize,
+  .filter-stock {
+    * {
+      height: 20px;
     }
-    .filter-prize {
-      * {
-        height: 20px;
-      }
-      .filter-txt {
-        padding-top: 0;
-      }
-    }
-    .filter-stock {
+
+    .filter-txt {
       padding-top: 0;
     }
   }
-  
-  .filter-secondbox {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    .filter-reset {
-      margin-top: 4px;
-    }
+}
+
+.filter-secondbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  .filter-reset {
+    margin-top: 4px;
   }
-  
-  .form-switch {
-    .form-check-input {
-      transition: none;
-      padding: 11px;
-      width: 45px;
-      margin-right: 10px;
-    }
+}
+
+.form-switch {
+  .form-check-input {
+    transition: none;
+    padding: 11px;
+    width: 45px;
+    margin-right: 10px;
   }
-  
-  .filter-txt {
-    padding-top: 2vh;
-    color: $color_9;
+}
+
+.filter-txt {
+  padding-top: 2vh;
+  color: $color_9;
+}
+
+.filter-dropdown-categoria,
+.filter-dropdown-talle {
+  .form-select {
+    @include select-styles($height: $height-small);
   }
-  
-  .filter-dropdown-categoria {
-    .form-select {
-      background-color: #333;
-      color: $color_4;
-      border: 1px solid #444;
-      border-radius: 5px;
-      height: 4vh;
-    }
-  }
-  
-  .filter-dropdown-talle {
-    .form-select {
-      background-color: #333;
-      color: $color_4;
-      border: 1px solid #444;
-      border-radius: 5px;
-      height: 4vh;
-    }
-  }
-  
-  .titular-body-productos {
-    font-weight: bold;
-    font-size: 1.3rem;
-    background-color: #2b2b2be0;
+}
+
+.titular-body-productos {
+  font-weight: bold;
+  font-size: 1.3rem;
+  background-color: $color_10;
+  color: $color_4;
+  margin-bottom: 0;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.product-img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.container {
+  margin-top: 15px;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.card-text {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.filter-body-sm {
+  display: none;
+  background-color: $color_10;
+  padding: 15px;
+  border-radius: $border-radius;
+  box-shadow: 0 4px 6px $col_shadow;
+
+  h2 {
     color: $color_4;
-    margin-bottom: 0;
-    padding: 10px 0;
-    text-align: center;
+    font-size: 20px;
+    margin-bottom: 15px;
   }
-  
-  .product-img {
-    height: 200px;
-    object-fit: cover;
-  }
-  
-  .container {
-    margin-top: 15px;
-    box-sizing: border-box;
-    max-width: 100%;
-  }
-  
-  .card-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-  }
-  
-  .card-text {
-    text-align: center;
-    margin-bottom: 10px;
-  }
-  
-  /* .filter-body-sm */
-  .filter-body-sm {
-    display: none; // reactivado en media queries
-    background-color: #292929;
-    padding: 15px;
-    border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  
-    h2 {
-      color: $color_4;
-      font-size: 20px;
-      margin-bottom: 15px;
-    }
-  }
-  
+}

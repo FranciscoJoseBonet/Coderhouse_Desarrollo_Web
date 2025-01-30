@@ -31,3 +31,21 @@ $button_first: #a8a8a8;
 $button_second: #0b2b55;
 $button_first_hv: #a8a8a8;
 $button_second_hv: #3d4e88;
+
+$border-style: solid;
+$border-width: 2px;
+$border-color: $color_4;
+$border-radius: 5px;
+$background-color: $color_6;
+$height-small: 4vh;
+$height-medium: 7vh;
+
+// Cards
+$border-radius-card: 10px;
+$border-width-card: 2px;
+$transition-duration: 0.4s;
+$box-shadow-card: 0 3px 8px $col_shadow;
+$hover-shadow-card: 0 5px 15px $col_shadow;
+$font-size-title: 2.2rem;
+$height-card-default: 40vh;
+$height-title-section: 12vh;

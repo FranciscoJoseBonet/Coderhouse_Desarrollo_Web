@@ -1,43 +1,15 @@
-// _search-box.scss
+@import '../mixins';
 
 .search-box {
-  display: flex;
-  align-items: center;
-  gap: 5px;
+  @include flexbox-search(flex-start, center, 5px);
   margin-top: -15px;
+
   input {
-    color: $color_4;
-    width: 290px;
-    padding: 10px;
-    border: 2px solid $color_11;
-    border-radius: 20px;
-    font-size: 13px;
-    outline: none;
-    transition: border-color 0.3s ease;
-    height: 2px;
-    background-color: $color_9;
-    &:focus {
-      border-color: $color_14;
-      box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
-    }
-    &::placeholder {
-      color: $color_5;
-    }
+    @include input-style;
+    height: 26px
   }
+
   button {
-    padding: 2px 15px;
-    background-color: $color_1;
-    border: solid;
-    border-color: $color_10;
-    border-radius: 20px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    height: 26px;
-    &:hover {
-      background-color: $color_9;
-    }
-    &:active {
-      transform: scale(0.95);
-    }
+    @include button-style;
   }
 }

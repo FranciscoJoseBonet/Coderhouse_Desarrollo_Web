@@ -62,8 +62,9 @@ a {
   font-weight: bold;
   text-transform: uppercase;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
   z-index: 20;
   padding-top: 19px;
 }
@@ -71,8 +72,9 @@ a {
 nav ul {
   background-color: rgb(0, 0, 0);
   display: flex;
-  align-items: center;
   justify-content: left;
+  align-items: center;
+  flex-wrap: nowrap;
   height: 30px;
 }
 nav ul li a {
@@ -102,8 +104,9 @@ header .search-box .lupita {
 
 .mid_head {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
   height: 80px;
   background-color: rgb(0, 0, 0);
   color: white;
@@ -204,7 +207,7 @@ footer a {
   justify-content: space-evenly;
   align-items: baseline;
   flex-wrap: wrap;
-  padding: 100px 0px;
+  padding: 100px 0;
 }
 .topper-foot table {
   list-style: none;
@@ -218,10 +221,14 @@ footer a {
   border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 .topper-foot .fir_foot button a {
   color: white;
   text-decoration: none;
+}
+.topper-foot .fir_foot button:hover {
+  background-color: black;
 }
 .topper-foot .fir_foot button:active {
   transform: scale(0.98);
@@ -236,15 +243,18 @@ footer a {
 }
 .sec_foot ul {
   list-style: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
 .fir_foot {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: column;
+  gap: 30px;
   text-align: center;
   flex-direction: column;
-  gap: 30px;
 }
 .fir_foot h3 {
   margin-bottom: 40px;
@@ -260,9 +270,11 @@ footer a {
 
 .social-links {
   display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: nowrap;
   margin-top: 10px;
   gap: 20px;
-  justify-content: center;
 }
 
 .sublinks_1 {
@@ -275,6 +287,7 @@ footer a {
 
 .search-box {
   display: flex;
+  justify-content: flex-start;
   align-items: center;
   gap: 5px;
   margin-top: -15px;
@@ -288,8 +301,8 @@ footer a {
   font-size: 13px;
   outline: none;
   transition: border-color 0.3s ease;
-  height: 2px;
   background-color: #424242;
+  height: 26px;
 }
 .search-box input:focus {
   border-color: #aaaaaa;
@@ -301,8 +314,7 @@ footer a {
 .search-box button {
   padding: 2px 15px;
   background-color: rgb(0, 0, 0);
-  border: solid;
-  border-color: #303030;
+  border: solid #303030;
   border-radius: 20px;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -424,10 +436,9 @@ footer a {
 
 .body_sobrefoot {
   background-color: #aaaaaa;
-  height: 200px;
+  height: auto;
   display: flex;
   flex-direction: row;
-  height: auto;
   padding: 2%;
 }
 .body_sobrefoot .bsf_text {
@@ -439,6 +450,8 @@ footer a {
 .body_sobrefoot .subscription {
   order: 2;
   background-color: #dfdfdf;
+  transition: background-color 0.3s;
+  border: 2px solid #dfdfdf;
   border-radius: 10px;
   box-shadow: 0 0 15px rgba(7, 7, 7, 0.466);
   display: flex;
@@ -446,8 +459,7 @@ footer a {
   max-width: 35%;
   margin-left: auto;
 }
-
-.subscription form {
+.body_sobrefoot .subscription form {
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -455,8 +467,9 @@ footer a {
   width: 100%;
   height: 100%;
   padding: 3% 5%;
+  gap: 7px;
 }
-.subscription input[type=submit] {
+.body_sobrefoot .subscription input[type=submit] {
   background-color: rgb(0, 0, 0);
   padding: 0px 21px;
   border: none;
@@ -467,15 +480,14 @@ footer a {
   height: 45px;
   transition: background-color 0.3s, transform 0.2s;
 }
-.subscription input[type=submit]:hover {
+.body_sobrefoot .subscription input[type=submit]:hover {
   background-color: #585858;
   transform: scale(1.02);
   color: rgb(0, 0, 0);
 }
-.subscription input[type=email] {
+.body_sobrefoot .subscription input[type=email] {
   height: 45px;
   padding: 12px;
-  margin-bottom: 15px;
   border: 1px solid #aaaaaa;
   border-radius: 8px;
   font-size: 16px;
@@ -483,19 +495,30 @@ footer a {
   background-color: #f7f7f7;
   transition: border-color 0.3s, box-shadow 0.3s;
 }
-.subscription input[type=email]:hover {
+.body_sobrefoot .subscription input[type=email]:hover {
   border-color: rgb(0, 0, 0);
   outline: none;
   box-shadow: 0 0 5px rgba(7, 7, 7, 0.466);
 }
-.subscription input[type=email]:focus {
+.body_sobrefoot .subscription input[type=email]:focus {
   border-color: #3d4e88;
   box-shadow: 0 0 5px rgba(7, 7, 7, 0.466);
 }
 
 .item img {
-  height: 250px;
   width: 25%;
+  height: auto;
+  aspect-ratio: auto;
+  border: solid 0.1px #aaaaaa;
+  border-radius: 2%;
+  box-shadow: 0 2px 4px rgba(7, 7, 7, 0.466);
+  transition: transform 0.5s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  height: 250px;
+}
+.item img:hover {
+  transform: scale(1);
+  border-color: #aaaaaa;
+  box-shadow: 0 5px 5px rgba(7, 7, 7, 0.466);
 }
 .item .nombre_item {
   font-weight: bold;
@@ -503,88 +526,89 @@ footer a {
 
 .Mitem {
   display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
   gap: 2rem;
   padding: 5vh 4%;
   background-color: white;
 }
 .Mitem .L_Mitem {
-  background-color: white;
   flex: 1.5;
   order: 1;
   padding: 10px;
-  border-style: solid;
-  border-width: 0.1px;
-  border-color: #aaaaaa;
+  border: solid 0.1px #aaaaaa;
   border-radius: 1%;
   box-shadow: 0 2px 4px rgba(7, 7, 7, 0.466);
 }
 .Mitem .L_Mitem .L_Mitem_imgs {
-  gap: 10px;
   display: flex;
-  background-color: inherit;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
   padding: 10px;
 }
 .Mitem .L_Mitem .L_Mitem_imgs .mainIMG {
-  width: 75%;
   display: flex;
-  padding-top: 2vh;
+  flex-direction: row;
   justify-content: center;
-  border-style: none;
-  border-radius: 1%;
-  padding-bottom: 0;
+  align-items: center;
+  gap: 0;
+  width: 75%;
+  padding-top: 2vh;
   margin: auto;
 }
 .Mitem .L_Mitem .L_Mitem_imgs .mainIMG img {
   width: 75%;
   height: auto;
   aspect-ratio: auto;
-  border-style: solid;
+  border: solid 0.1px #aaaaaa;
   border-radius: 2%;
-  border-width: 0.1px;
-  border-color: #aaaaaa;
-  overflow: hidden;
-  transition: transform 0.5s ease;
+  box-shadow: 0 2px 4px rgba(7, 7, 7, 0.466);
+  transition: transform 0.5s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 .Mitem .L_Mitem .L_Mitem_imgs .mainIMG img:hover {
   transform: scale(1.08);
+  border-color: #aaaaaa;
+  box-shadow: 0 5px 5px rgba(7, 7, 7, 0.466);
 }
 .Mitem .L_Mitem .L_Mitem_imgs .L_Mitem_imgs_extras {
-  width: 25%;
   display: flex;
   flex-direction: column;
-  border-style: none;
-  border-radius: 2%;
-  gap: 2vh;
-  padding: 2vh 1%;
+  justify-content: center;
   align-items: center;
+  gap: 2vh;
+  width: 25%;
+  padding: 2vh 1%;
 }
 .Mitem .L_Mitem .L_Mitem_imgs .L_Mitem_imgs_extras img {
   width: 90%;
   height: auto;
   aspect-ratio: auto;
-  border-style: solid;
+  border: solid 0.1px #aaaaaa;
   border-radius: 2%;
-  border-width: 0.1px;
-  border-color: #aaaaaa;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 4px rgba(7, 7, 7, 0.466);
+  transition: transform 0.5s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 .Mitem .L_Mitem .L_Mitem_imgs .L_Mitem_imgs_extras img:hover {
+  transform: scale(1);
   border-color: #aaaaaa;
   box-shadow: 0 5px 5px rgba(7, 7, 7, 0.466);
 }
 .Mitem .L_Mitem .L_Mitem_txt {
-  background-color: inherit;
   display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
   padding-left: 20px;
   margin-top: 10px;
-  gap: 10px;
 }
 .Mitem .L_Mitem .L_Mitem_txt h2 {
-  background-color: inherit;
   font-size: 0.8rem;
 }
 .Mitem .L_Mitem .L_Mitem_txt a {
-  background-color: inherit;
   color: rgb(0, 0, 0);
   text-decoration: none;
 }
@@ -595,22 +619,17 @@ footer a {
 }
 .Mitem .L_Mitem hr {
   width: 93%;
-  align-items: center;
+  margin: 0 auto;
   border: none;
   border-top: 1.3px solid rgb(0, 0, 0);
-  margin: 0 auto;
-  padding: 0;
 }
 .Mitem .R_Mitem {
-  background-color: #e4e1e1;
-  height: auto;
-  order: 2;
-  padding: 1% 2%;
-  border-style: solid;
-  border-width: 0.1px;
-  border-color: #aaaaaa;
+  border: solid 0.1px #aaaaaa;
   border-radius: 1%;
   box-shadow: 0 2px 4px rgba(7, 7, 7, 0.466);
+  background-color: #e4e1e1;
+  order: 2;
+  padding: 1% 2%;
   position: sticky;
   top: 10px;
   width: 30%;
@@ -621,6 +640,9 @@ footer a {
 }
 .Mitem .R_Mitem .CAL {
   display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
   gap: 2%;
 }
 .Mitem .R_Mitem .R_Mitem_prize {
@@ -630,10 +652,12 @@ footer a {
   margin: 0;
 }
 .Mitem .R_Mitem .R_Mitem_talle {
-  margin-top: 20px;
-  display: block;
+  display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
   gap: 2%;
+  margin-top: 20px;
 }
 .Mitem .R_Mitem .R_Mitem_bot {
   position: relative;
@@ -758,7 +782,7 @@ footer a {
 .filter-body {
   width: 100%;
   height: 7vh;
-  background-color: grey;
+  background-color: #aaaaaa;
   border-bottom: white;
   border-width: 2px;
   border-style: solid;
@@ -785,13 +809,10 @@ footer a {
   height: 7vh;
   font-size: 1.4vh;
 }
-.filter-firstbox .filter-prize * {
+.filter-firstbox .filter-prize *, .filter-firstbox .filter-stock * {
   height: 20px;
 }
-.filter-firstbox .filter-prize .filter-txt {
-  padding-top: 0;
-}
-.filter-firstbox .filter-stock {
+.filter-firstbox .filter-prize .filter-txt, .filter-firstbox .filter-stock .filter-txt {
   padding-top: 0;
 }
 
@@ -816,18 +837,11 @@ footer a {
   color: #424242;
 }
 
-.filter-dropdown-categoria .form-select {
-  background-color: #333;
-  color: white;
-  border: 1px solid #444;
-  border-radius: 5px;
-  height: 4vh;
-}
-
+.filter-dropdown-categoria .form-select,
 .filter-dropdown-talle .form-select {
   background-color: #333;
   color: white;
-  border: 1px solid #444;
+  border: 1px solid #424242;
   border-radius: 5px;
   height: 4vh;
 }
@@ -835,7 +849,7 @@ footer a {
 .titular-body-productos {
   font-weight: bold;
   font-size: 1.3rem;
-  background-color: rgba(43, 43, 43, 0.8784313725);
+  background-color: #303030;
   color: white;
   margin-bottom: 0;
   padding: 10px 0;
@@ -865,13 +879,12 @@ footer a {
   margin-bottom: 10px;
 }
 
-/* .filter-body-sm */
 .filter-body-sm {
   display: none;
-  background-color: #292929;
+  background-color: #303030;
   padding: 15px;
   border-radius: 5px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(7, 7, 7, 0.466);
 }
 .filter-body-sm h2 {
   color: white;
@@ -941,12 +954,16 @@ footer a {
     display: none;
   }
   .separador-titular-small {
-    display: unset;
-    position: relative;
-    top: -20px;
-  }
-  .separador-titular-small h1 {
-    margin-bottom: 1.1rem;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 4vh;
+    padding-top: 0;
+    margin-bottom: 3vh;
+    margin-top: 4px;
   }
   /* Adaptaciones responsive para el diseño del header y el footer en todos los archivos */
   header,
@@ -1205,6 +1222,9 @@ footer a {
   }
   .Mitem .L_Mitem .L_Mitem_imgs .L_Mitem_imgs_extras img {
     height: auto;
+  }
+  .Mitem .L_Mitem .L_Mitem_imgs .L_Mitem_imgs_extras {
+    gap: 3vh;
   }
   .Mitem .R_Mitem .R_Mitem_bot {
     position: relative;

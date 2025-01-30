@@ -1,152 +1,113 @@
-// _item.scss
+@import '../mixins';
 
 .item {
   img {
+    @include img-style(25%);
     height: 250px;
-    width: 25%;
   }
+
   .nombre_item {
     font-weight: bold;
   }
 }
 
 .Mitem {
-  display: flex;
-  gap: 2rem;
+  @include flexbox-item(row, flex-start, stretch, 2rem);
   padding: 5vh 4%;
   background-color: $color_4;
 
   .L_Mitem {
-    background-color: $color_4;
     flex: 1.5;
     order: 1;
     padding: 10px;
-    border-style: solid;
-    border-width: 0.1px;
-    border-color: $color_14;
-    border-radius: 1%;
-    box-shadow: 0 2px 4px $col_shadow;
+    @include border-style($color_14, 0.1px, 1%);
 
     .L_Mitem_imgs {
-      gap: 10px;
-      display: flex;
-      background-color: inherit;
+      @include flexbox-item(row, flex-start, center, 10px);
       padding: 10px;
+
       .mainIMG {
+        @include flexbox-item(row, center, center);
         width: 75%;
-        display: flex;
         padding-top: 2vh;
-        justify-content: center;
-        border-style: none;
-        border-radius: 1%;
-        padding-bottom: 0;
         margin: auto;
+
         img {
-          width: 75%;
-          height: auto;
-          aspect-ratio: auto;
-          border-style: solid;
-          border-radius: 2%;
-          border-width: 0.1px;
-          border-color: $color_14;
-          overflow: hidden;
-          transition: transform 0.5s ease;
-          &:hover {
-            transform: scale(1.08);
-          }
+          @include img-style(75%, 1.08);
         }
       }
+
       .L_Mitem_imgs_extras {
+        @include flexbox-item(column, center, center, 2vh);
         width: 25%;
-        display: flex;
-        flex-direction: column;
-        border-style: none;
-        border-radius: 2%;
-        gap: 2vh;
         padding: 2vh 1%;
-        align-items: center;
+
         img {
-          width: 90%;
-          height: auto;
-          aspect-ratio: auto;
-          border-style: solid;
-          border-radius: 2%;
-          border-width: 0.1px;
-          border-color: $color_14;
-          transition: border-color 0.3s ease, box-shadow 0.3s ease;
-          &:hover {
-            border-color: $color_14;
-            box-shadow: 0 5px 5px $col_shadow;
-          }
+          @include img-style(90%);
         }
       }
     }
 
     .L_Mitem_txt {
-      background-color: inherit;
-      display: flex;
+      @include flexbox-item(row, flex-start, center, 10px);
       padding-left: 20px;
       margin-top: 10px;
-      gap: 10px;
+
       h2 {
-        background-color: inherit;
         font-size: 0.8rem;
       }
+
       a {
-        background-color: inherit;
         color: $color_1;
         text-decoration: none;
       }
     }
+
     .L_Mitem_com {
       padding-left: 10px;
       margin-left: 20px;
       margin-top: 10px;
     }
+
     hr {
       width: 93%;
-      align-items: center;
+      margin: 0 auto;
       border: none;
       border-top: 1.3px solid $color_1;
-      margin: 0 auto;
-      padding: 0;
     }
   }
 
   .R_Mitem {
-    a {
-      text-decoration: none;
-      font-size: 0.8rem;
-    }
+    @include border-style($color_14, 0.1px, 1%);
     background-color: $color_13;
-    height: auto;
     order: 2;
     padding: 1% 2%;
-    border-style: solid;
-    border-width: 0.1px;
-    border-color: $color_14;
-    border-radius: 1%;
-    box-shadow: 0 2px 4px $col_shadow;
     position: sticky;
     top: 10px;
     width: 30%;
 
-    .CAL {
-      display: flex;
-      gap: 2%;
+    a {
+      text-decoration: none;
+      font-size: 0.8rem;
     }
+
+    .CAL {
+      @include flexbox-item(row, flex-start, center, 2%);
+    }
+
     .R_Mitem_prize {
       margin-bottom: 30px;
+
       h2 {
         margin: 0;
       }
     }
+
     .R_Mitem_talle {
+      @include flexbox-item(column, flex-start, flex-start, 2%);
       margin-top: 20px;
-      display: block;
-      flex-direction: column;
-      gap: 2%;
     }
+
     .R_Mitem_bot {
       position: relative;
       bottom: -20px;
