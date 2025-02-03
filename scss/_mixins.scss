@@ -203,12 +203,13 @@
     border-top: none;
 }
 
-@mixin select-styles($height: $height-small, $background: $background-color, $color: $color_4) {
+@mixin select-styles($height: $height-small, $background: $background-color, $color: $color_4, $fontS: $font-size2) {
     background-color: $background;
     color: $color;
     border: 1px solid $color_9;
     border-radius: $border-radius;
-    height: $height;
+    height: $height+3vh;
+    font-size: $fontS;
 }
 
 @mixin card-border($color: $color_10, $width: $border-width-card, $radius: $border-radius-card) {

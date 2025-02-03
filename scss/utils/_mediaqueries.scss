@@ -222,13 +222,12 @@
 
     .filter-dropdown-talle select,
     .filter-dropdown-categoria select {
-        background-color: $color_10;
-        color: $color_4;
-        border: 1px solid $color_9;
-        border-radius: 5px;
-        padding: 8px;
+        @include select-styles($height: $height-small, $fontS: $font-size2);
     }
-
+    .filter-dropdown-talle select,
+    .filter-dropdown-categoria select {
+        height: 7vh;
+    }
 
     .filter-prize p {
         color: $color_4;
