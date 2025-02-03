@@ -231,7 +231,11 @@
     <!-- Vinculacion de la libreria AOS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init();
+        AOS.init({
+            offset: -10, // La animación se activa 200px antes
+            duration: 400, // Duración de la animación en milisegundos
+            easing: 'ease-in-out', // Efecto de suavizado
+        });
     </script>
     
     <!-- importaciones JS de Bootstrap -->

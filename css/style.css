@@ -672,6 +672,7 @@ footer a {
   width: 98vw;
   box-sizing: border-box;
   margin: 5px auto;
+  overflow-x: hidden;
 }
 .tarjetero * {
   height: 35vh;
@@ -898,9 +899,6 @@ footer a {
 }
 
 @media (max-width: 1024px) {
-  body {
-    overflow-x: hidden;
-  }
   header {
     font-size: 0.9rem;
   }
@@ -1301,9 +1299,6 @@ footer a {
   .body_contact {
     min-height: auto;
     padding: 20px 0;
-  }
-  body {
-    overflow-x: hidden;
   }
 }
 @media (max-width: 576px) {
