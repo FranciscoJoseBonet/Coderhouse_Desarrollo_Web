@@ -9,6 +9,7 @@ body {
   height: 100%;
   width: 100%;
   background-color: #dadada;
+  overflow-x: hidden;
 }
 
 a {
@@ -116,7 +117,8 @@ header .search-box .lupita {
   text-transform: uppercase;
 }
 
-.holder .bot1, .holder .bot2, .holder button {
+.holder .bot1,
+.holder .bot2, .holder button {
   background-color: rgb(0, 0, 0);
   padding: 10px 20px;
   border: none;
@@ -135,7 +137,7 @@ header .search-box .lupita {
 .holder {
   position: relative;
   width: 100%;
-  height: 400px;
+  height: 78vh;
   margin: 0;
   overflow: hidden;
 }
@@ -172,7 +174,8 @@ header .search-box .lupita {
 .holder button:active {
   background-color: #303030;
 }
-.holder .bot1, .holder .bot2 {
+.holder .bot1,
+.holder .bot2 {
   position: absolute;
   top: 64%;
   left: 50%;
@@ -809,10 +812,12 @@ footer a {
   height: 7vh;
   font-size: 1.4vh;
 }
-.filter-firstbox .filter-prize *, .filter-firstbox .filter-stock * {
+.filter-firstbox .filter-prize *,
+.filter-firstbox .filter-stock * {
   height: 20px;
 }
-.filter-firstbox .filter-prize .filter-txt, .filter-firstbox .filter-stock .filter-txt {
+.filter-firstbox .filter-prize .filter-txt,
+.filter-firstbox .filter-stock .filter-txt {
   padding-top: 0;
 }
 
@@ -893,6 +898,9 @@ footer a {
 }
 
 @media (max-width: 1024px) {
+  body {
+    overflow-x: hidden;
+  }
   header {
     font-size: 0.9rem;
   }
@@ -914,6 +922,9 @@ footer a {
   .Mitem .R_Mitem .R_Mitem_bot {
     position: relative;
     bottom: 0px;
+  }
+  .Mitem .R_Mitem .CAL p {
+    margin-bottom: unset;
   }
   .Mitem .L_Mitem {
     order: 1;
@@ -1103,7 +1114,7 @@ footer a {
   }
   /* Diseño mejorado del aspecto de los elementos del menu responsive */
   nav ul {
-    background-color: rgb(0, 0, 0);
+    background-color: unset;
     display: flex;
     align-items: center;
     justify-content: left;
@@ -1290,6 +1301,9 @@ footer a {
   .body_contact {
     min-height: auto;
     padding: 20px 0;
+  }
+  body {
+    overflow-x: hidden;
   }
 }
 @media (max-width: 576px) {

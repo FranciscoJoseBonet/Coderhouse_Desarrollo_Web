@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
         rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Style -->
     <link rel="stylesheet" href="css/style.css">
     <!-- Font -->
@@ -107,10 +108,10 @@
     </div>
 
     <!-- Tarjetero de categorias de ropa de la pagina -->
-    <div class="tarjetero row row-cols-1 row-cols-md-2 g-2 p-0">
+    <div class="tarjetero row row-cols-1 row-cols-md-2 g-2 p-0"">
         <a href="templates/productos.html">
             <div class="col">
-                <div class="card">
+                <div class="card" data-aos="zoom-in-right">
                     <div class="card-img-container">
                         <img src="assets/img/Remerones Oversize/remeron_card.png" class="card-img-top"
                             alt="Remeron_card_img">
@@ -125,7 +126,7 @@
 
         <div class="col">
             <a href="templates/productos.html">
-                <div class="card">
+                <div class="card"  data-aos="zoom-in-left">
                     <div class="card-img-container">
                         <img src="assets/img/Musculosa Oversize/musculosa_card.png" class="card-img-top"
                             alt="Musculosa_card_img">
@@ -140,7 +141,7 @@
 
         <div class="col">
             <a href="templates/productos.html">
-                <div class="card">
+                <div class="card" data-aos="zoom-in-right">
                     <div class="card-img-container">
                         <img src="assets/img/Camisa_hombre2.jpg" class="card-img-top" alt="Camisa_card_img">
                     </div>
@@ -154,7 +155,7 @@
 
         <div class="col">
             <a href="templates/productos.html">
-                <div class="card">
+                <div class="card"  data-aos="zoom-in-left">
                     <div class="card-img-container">
                         <img src="assets/img/Bermudas/Bermuda de jean.png" class="card-img-top" alt="Bermuda_card_img">
                     </div>
@@ -226,10 +227,18 @@
         <p>Powered by B'nT</p>
     </div>
 
+
+    <!-- Vinculacion de la libreria AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    
     <!-- importaciones JS de Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
         integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
         crossorigin="anonymous"></script>

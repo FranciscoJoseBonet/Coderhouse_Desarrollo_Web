@@ -28,6 +28,12 @@
                 position: relative;
                 bottom: 0px;
             }
+
+            .CAL {
+                p {
+                    margin-bottom: unset;
+                }
+            }
         }
 
         .L_Mitem {
@@ -262,7 +268,7 @@
 
     /* Diseño mejorado del aspecto de los elementos del menu responsive */
     nav ul {
-        background-color: $color_1;
+        background-color: unset;
         display: flex;
         align-items: center;
         justify-content: left;
