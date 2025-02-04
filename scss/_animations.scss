@@ -18,11 +18,11 @@
     }
 }
 
-@keyframes flipEffect {
+@keyframes hoverEffect {
     0% {
-      transform: rotateX(0deg);
+      transform: translateY(0) scale(1);
     }
     100% {
-      transform: rotateX(30deg);
+      transform: translateY(-5px) scale(1.01);
     }
   }

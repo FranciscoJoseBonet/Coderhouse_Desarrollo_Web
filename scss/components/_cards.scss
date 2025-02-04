@@ -1,5 +1,8 @@
 // _cards.scss
 
+@import '../variables';
+@import '../animations';
+
 .tarjetero {
   width: 98vw;
   box-sizing: border-box;
@@ -28,11 +31,12 @@
   margin-bottom: 20px;
   border: 1px solid $color_13;
   border-radius: 8px;
+  transition: 0.3s ease;
 
   &:hover {
-    transform: scale(0.98);
     box-shadow: 0 4px 12px $col_shadow;
     border-color: $color_14;
+    animation: hoverEffect 0.3s forwards;
   }
 }
 

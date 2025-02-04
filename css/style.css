@@ -668,6 +668,30 @@ footer a {
   margin-bottom: 4vh;
 }
 
+@keyframes tilt-left {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-5deg);
+  }
+}
+@keyframes tilt-right {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(5deg);
+  }
+}
+@keyframes hoverEffect {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+  100% {
+    transform: translateY(-5px) scale(1.01);
+  }
+}
 .tarjetero {
   width: 98vw;
   box-sizing: border-box;
@@ -695,11 +719,12 @@ footer a {
   margin-bottom: 20px;
   border: 1px solid #e4e1e1;
   border-radius: 8px;
+  transition: 0.3s ease;
 }
 .card:hover {
-  transform: scale(0.98);
   box-shadow: 0 4px 12px rgba(7, 7, 7, 0.466);
   border-color: #aaaaaa;
+  animation: hoverEffect 0.3s forwards;
 }
 
 .card-img-container {
