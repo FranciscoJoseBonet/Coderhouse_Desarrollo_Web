@@ -19,7 +19,7 @@
 
 
 
-    <title>Crossover.sf Shop</title>
+    <title>Crossover.sf EShop</title>
 </head>
 
 <body class="body_background">
@@ -44,9 +44,6 @@
                             </a></li>
                         <li><a href="../index.html">Inicio</a></li>
                         <li><a href="productos.html">Productos</a></li>
-                        <!-- <li><a href="rebajas.html">Rebajas</a></li>
-                    <li><a href="verano.html">Verano</a></li>
-                    <li><a href="novedades.html">Novedades</a></li>-->
                         <li><a href="contacto.html">Contacto</a></li>
                     </ul>
                 </nav>
@@ -80,9 +77,7 @@
                         <ul>
                             <li><a href="../index.html">Inicio</a></li>
                             <li><a href="productos.html">Productos</a></li>
-                            <!-- <li><a href="rebajas.html">Rebajas</a></li>
-                            <li><a href="verano.html">Verano</a></li>
-                            <li><a href="novedades.html">Novedades</a></li>-->
+                            <!--<li><a href="carrito.html">Carrito</a></li>-->
                             <li><a href="contacto.html">Contacto</a></li>
                         </ul>
                     </div>
@@ -98,8 +93,53 @@
         </div>
     </nav>
 
-    <!-- CONTENT -->
+    <div class="Mitem body-carrito">
+        <!-- Visualizacion de items de compra -->
+        <div class="L_Mitem rounded-2 individuales-carrito">
+            <div class="unidad-carrito rounded-2">
+                <div class="imagen-carrito">
+                    <img src="../assets/img/Remerones Oversize/REMERA OVERSIZE MOON NEGRA.png" alt="Remera_oversize_negra">
+                </div>
+                <div class="desc-carrito">
+                    <div class="id-unidad">Remera Freedom</div>
+                    <div class="precio-unidad"><p>$20.000</p></div>
+                    <div class="desc-unidad">Breve descripcion de cualidades</div>
+                </div>
+                <div class="interactivo-carrito">
+                    <div class="input-group" style="width: 150px;">
+                        <button class="btn btn-outline-secondary" type="button" id="decrement">−</button>
+                        <input type="text" class="form-control text-center btn-outline-secondary" id="counter" value="0" readonly>
+                        <button class="btn btn-outline-secondary" type="button" id="increment">+</button>
+                    </div>
+                    <button type="button" class="btn btn-danger eliminar-item">Eliminar</button>
+                </div>
+            </div>
+            
+        </div>
+        <!-- Visualizacion del total de la compra -->
+        <div class="R_Mitem rounded-2 totales-carrito">
+            <p>Derecha</p>
+        </div>
+    </div>
 
+    <!-- sobre footer para subscipcion por el mail -->
+    <div class="body_sobrefoot">
+        <div class="bsf_text">
+            <div class="tsobref">
+                <h2>Gana un descuento del 5% en CUALQUIER producto</h2>
+            </div>
+            <div class="xsobref">
+                <p>Suscribite a nuestras actualizaciones semanales si queres recibir los mejores beneficios solo para
+                    vos!!</p>
+            </div>
+        </div>
+        <div class="subscription">
+            <form action="">
+                <input type="email" placeholder="Ingresa tu e-mail" for="email">
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </div>
     <!-- Diseño del pie de pagina -->
     <footer>
 
@@ -110,8 +150,8 @@
                 <div class="social-links">
                     <a href="https://www.instagram.com/crossover.sf/"><i class="fa-brands fa-instagram fa-2xl"></i></a>
                     <a href=""><i class="fa-brands fa-facebook fa-2xl"></i></a>
-                    <a href="https://wa.me/3425119158?text=Hola,%20Quiero%20ver%20el%20cat%C3%A1logo!!"><i
-                            class="fa-brands fa-whatsapp fa-flip fa-2xl"></i></i></a>
+                    <a href="https://wa.me/?text=Hola,%20Quiero%20ver%20el%20cat%C3%A1logo!!"><i
+                            class="fa-brands fa-whatsapp fa-2xl"></i></i></a>
                 </div>
             </div>
 

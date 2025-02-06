@@ -12,11 +12,11 @@
 @import 'layout/holder-index'; // Sección principal del index
 @import 'layout/footer'; // Footer y sus componentes
 
-// Estilos de elementos reutilizables.
 @import 'components/search-box'; // Barra de búsqueda
 @import 'components/forms'; // Formularios
 @import 'components/body_sobrefoot'; // Sección de subscripcion en el index
 @import 'components/item'; // Estilos de items individuales
+@import 'components/carrito'; // Estilos del carrito
 @import 'components/cards'; // Estilos de tarjetas
 @import 'components/accordion'; // Acordiones
 @import 'components/filter'; // Filtros

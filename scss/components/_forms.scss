@@ -16,6 +16,7 @@
 
 .father_form {
   @include shared-form-styles;
+  margin: 10px;
 
   h1 {
     text-align: center;

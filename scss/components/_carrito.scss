@@ -1,0 +1,53 @@
+@import '../mixins';
+@import '../variables';
+
+
+.body-carrito {
+    padding: 7vh 9%;
+
+    .individuales-carrito {
+        .unidad-carrito {
+            background-color: $color_13;
+            @include flexbox(space-between, center);
+            padding: 20px !important;
+
+            .imagen-carrito {
+                img {
+                    height: 20vh; //En responsive bajar esta medida
+                    border-radius: 3%;
+                    border-color: rgba(104, 104, 104, 0.452);
+                }
+            }
+
+            .desc-carrito {
+                @include uppercase-bold($size: 13px);
+                height: 20vh;
+                width: 30%;
+
+                .precio-unidad {
+                    font-size: 1.4rem;
+                }
+
+            }
+
+            .interactivo-carrito {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                .btn-outline-secondary {
+                    border-color: rgba(104, 104, 104, 0.452);
+                }
+
+                .input-group {
+                    width: 100%;
+                }
+
+                .eliminar-item {
+                    width: 100%;
+                }
+
+            }
+        }
+    }
+}
