@@ -548,14 +548,15 @@
             .desc-carrito {
                 width: 100% !important;
                 align-items: center;
-                height: fit-content;
+                height: auto !important;
                 padding-bottom: 10px;
+                margin-top: 15px;
             }
 
             .interactivo-carrito {
                 width: 80% !important;
                 align-items: center;
-                height: fit-content;
+                height: auto !important;
                 padding-bottom: 10px;
             }
         }
