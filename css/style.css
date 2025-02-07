@@ -528,6 +528,10 @@ footer a {
   box-shadow: 0 0 5px rgba(7, 7, 7, 0.466);
 }
 
+.ruteIndicator {
+  background-color: white;
+}
+
 .item img {
   width: 25%;
   height: auto;

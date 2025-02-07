@@ -1,5 +1,9 @@
 @import '../mixins';
 
+.ruteIndicator{
+  background-color: $color_4;
+}
+
 .item {
   img {
     @include img-style(25%);
