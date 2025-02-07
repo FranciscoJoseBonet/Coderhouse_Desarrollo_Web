@@ -1,19 +1,57 @@
 @import '../mixins';
 @import '../variables';
+@import '../animations';
 
 
 .body-carrito {
-    padding: 7vh 9%;
+    padding: 7vh 4%;
+    display: flex;
+    justify-content: center;
+
+    --x-0: 93%;
+    --y-0: 97%;
+    --c-0: hsla(55.58823529411776, 0%, 100%, 0.86);
+    --y-1: 96%;
+    --x-1: 66%;
+    --c-1: hsla(260.735294117647, 85%, 73%, 0.42);
+    --x-2: 10%;
+    --y-2: 93%;
+    --c-2: hsla(181.00000000000003, 85%, 73%, 0.42);
+    --y-3: 94%;
+    --x-3: 48%;
+    --c-3: hsla(181.00000000000003, 85%, 73%, 0.42);
+    --x-4: 52%;
+    --c-4: hsla(252.7941176470588, 85%, 73%, 0);
+    --y-4: 79%;
+    background-color: hsla(198.00000000000063, 14%, 16%, 1);
+    background-image: radial-gradient(circle at var(--x-0) var(--y-0), var(--c-0) var(--s-start-0), transparent var(--s-end-0)),
+                        radial-gradient(circle at var(--x-1) var(--y-1), var(--c-1) var(--s-start-1), transparent var(--s-end-1)),
+                        radial-gradient(circle at var(--x-2) var(--y-2), var(--c-2) var(--s-start-2), transparent var(--s-end-2)),
+                        radial-gradient(circle at var(--x-3) var(--y-3), var(--c-3) var(--s-start-3), transparent var(--s-end-3)),
+                        radial-gradient(circle at var(--x-4) var(--y-4), var(--c-4) var(--s-start-4), transparent var(--s-end-4));
+    animation: hero-gradient-animation 10s linear infinite alternate;
+    background-blend-mode: overlay, normal, normal, normal, normal;
 
     .individuales-carrito {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        height: fit-content;
+        background-color: $color_4;
+        min-width: 650px;
+        max-width: 50%;
+
         .unidad-carrito {
+            // @include border-style(0px, 0.3%);
             background-color: $color_13;
             @include flexbox(space-between, center);
-            padding: 20px !important;
+            padding-right: 25px !important;
+            gap: 10px;
 
             .imagen-carrito {
                 img {
-                    height: 20vh; //En responsive bajar esta medida
+                    height: $height-carrito-item; //En responsive bajar esta medida
+                    aspect-ratio: 1/1;
                     border-radius: 3%;
                     border-color: rgba(104, 104, 104, 0.452);
                 }
@@ -21,11 +59,22 @@
 
             .desc-carrito {
                 @include uppercase-bold($size: 13px);
-                height: 20vh;
-                width: 30%;
+                height: $height-carrito-item;
+                width: 40%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
 
                 .precio-unidad {
                     font-size: 1.4rem;
+
+                    p {
+                        margin-bottom: 1vh;
+                    }
+                }
+
+                .id-unidad {
+                    font-size: 1.1rem;
                 }
 
             }
@@ -33,14 +82,18 @@
             .interactivo-carrito {
                 display: flex;
                 flex-direction: column;
+                justify-content: center;
                 gap: 10px;
+                height: $height-carrito-item;
+                width: 15%;
+                min-width: 100px;
 
                 .btn-outline-secondary {
                     border-color: rgba(104, 104, 104, 0.452);
                 }
 
                 .input-group {
-                    width: 100%;
+                    width: 100% !important;
                 }
 
                 .eliminar-item {
@@ -48,6 +101,23 @@
                 }
 
             }
+        }
+    }
+
+    .totales-carrito{
+        background-color: $color_4;
+        padding: 10px;
+        height: fit-content;
+        max-width: 28%;
+        text-align: center;
+
+        .contenedor-precio{
+            background-color: $color_13;
+            height: auto;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
         }
     }
 }

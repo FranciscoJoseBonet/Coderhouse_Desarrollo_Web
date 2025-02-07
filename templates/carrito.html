@@ -96,29 +96,67 @@
     <div class="Mitem body-carrito">
         <!-- Visualizacion de items de compra -->
         <div class="L_Mitem rounded-2 individuales-carrito">
+            <!-- primer producto -->
             <div class="unidad-carrito rounded-2">
                 <div class="imagen-carrito">
-                    <img src="../assets/img/Remerones Oversize/REMERA OVERSIZE MOON NEGRA.png" alt="Remera_oversize_negra">
+                    <img src="../assets/img/Remerones Oversize/REMERA OVERSIZE MOON NEGRA.png"
+                        alt="Remera_oversize_negra">
                 </div>
                 <div class="desc-carrito">
-                    <div class="id-unidad">Remera Freedom</div>
-                    <div class="precio-unidad"><p>$20.000</p></div>
+                    <div class="id-unidad">Remera Oversized Negra</div>
+                    <div class="precio-unidad">
+                        <p>$20.000</p>
+                    </div>
                     <div class="desc-unidad">Breve descripcion de cualidades</div>
                 </div>
                 <div class="interactivo-carrito">
                     <div class="input-group" style="width: 150px;">
                         <button class="btn btn-outline-secondary" type="button" id="decrement">−</button>
-                        <input type="text" class="form-control text-center btn-outline-secondary" id="counter" value="0" readonly>
+                        <input type="text" class="form-control text-center btn-outline-secondary" id="counter" value="0"
+                            readonly>
                         <button class="btn btn-outline-secondary" type="button" id="increment">+</button>
                     </div>
                     <button type="button" class="btn btn-danger eliminar-item">Eliminar</button>
                 </div>
             </div>
-            
+            <!-- segundo producto -->
+            <div class="unidad-carrito rounded-2">
+                <div class="imagen-carrito">
+                    <img src="../assets/img/Remerones Oversize/REMERA OVERSIZE SMILE BLANCA.png"
+                        alt="Remera_oversize_blanca">
+                </div>
+                <div class="desc-carrito">
+                    <div class="id-unidad">Remera Oversized Negra</div>
+                    <div class="precio-unidad">
+                        <p>$20.000</p>
+                    </div>
+                    <div class="desc-unidad">Breve descripcion de cualidades</div>
+                </div>
+                <div class="interactivo-carrito">
+                    <div class="input-group" style="width: 150px;">
+                        <button class="btn btn-outline-secondary" type="button" id="decrement">−</button>
+                        <input type="text" class="form-control text-center btn-outline-secondary" id="counter" value="0"
+                            readonly>
+                        <button class="btn btn-outline-secondary" type="button" id="increment">+</button>
+                    </div>
+                    <button type="button" class="btn btn-danger eliminar-item">Eliminar</button>
+                </div>
+            </div>
         </div>
         <!-- Visualizacion del total de la compra -->
         <div class="R_Mitem rounded-2 totales-carrito">
-            <p>Derecha</p>
+            <div class="contenedor-precio  rounded-2">
+                <h1>Total a pagar</h1>
+                <div class="R_Mitem_prize total">
+                    <h2>$40.000</h2>
+                    <a href="#">O paga en 6 Cuotas de $6.800 cada una</a>
+                </div>
+                <hr>
+                <div class="d-grid gap-2 nomod R_Mitem_bot">
+                    <button class="btn btn-success" type="button">Pagar</button>
+                </div>
+            </div>
+
         </div>
     </div>
 
