@@ -1290,6 +1290,16 @@ footer a {
   min-width: 14rem;
 }
 
+.color-btn {
+  background-color: #303030;
+  border-color: #dfdfdf;
+}
+.color-btn:hover {
+  color: rgb(0, 0, 0);
+  background-color: #aaaaaa;
+  border-color: rgb(0, 0, 0);
+}
+
 .card-title {
   text-align: center;
 }

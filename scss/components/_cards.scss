@@ -18,10 +18,22 @@
   }
 }
 
-.prod-card{
-  max-width: 18rem; 
+.prod-card {
+  max-width: 18rem;
   min-width: 14rem;
 }
+
+.color-btn {
+  background-color: $color_10;
+  border-color: $color_8;
+
+  &:hover{
+    color: $color_1;
+    background-color: $color_14;
+    border-color: $color_1;
+  }
+}
+
 
 .card-title {
   text-align: center;
