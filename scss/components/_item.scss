@@ -51,6 +51,7 @@
     order: 1;
     padding: 10px;
     background-color: $color_4;
+    height: fit-content;
     @include border-style($color_14, 0.1px, 1%);
 
     .L_Mitem_imgs {
@@ -116,6 +117,7 @@
     position: sticky;
     top: 45px;
     width: 30%;
+    height: fit-content;
 
     a {
       text-decoration: none;

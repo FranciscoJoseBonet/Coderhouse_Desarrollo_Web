@@ -606,6 +606,7 @@ footer a {
   order: 1;
   padding: 10px;
   background-color: white;
+  height: fit-content;
   border: solid 0.1px #aaaaaa;
   border-radius: 1%;
   box-shadow: 0 2px 4px rgba(7, 7, 7, 0.466);
@@ -702,6 +703,7 @@ footer a {
   position: sticky;
   top: 45px;
   width: 30%;
+  height: fit-content;
 }
 .Mitem .R_Mitem a {
   text-decoration: none;
