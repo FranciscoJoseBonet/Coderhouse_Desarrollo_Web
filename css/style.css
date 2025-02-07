@@ -348,6 +348,9 @@ footer a {
 .search-box button:active {
   transform: scale(0.95);
 }
+.search-box button i {
+  color: white;
+}
 
 .body_contact {
   font-family: "Source Sans 3", sans-serif;
@@ -1282,6 +1285,11 @@ footer a {
   border-color: #303030;
 }
 
+.prod-card {
+  max-width: 18rem;
+  min-width: 14rem;
+}
+
 .card-title {
   text-align: center;
 }
@@ -1494,6 +1502,18 @@ footer a {
   padding: 15px;
   border-radius: 5px;
   box-shadow: 0 4px 6px rgba(7, 7, 7, 0.466);
+}
+.filter-body-sm .filter-group1 {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+}
+.filter-body-sm .filter-group2 {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
 }
 .filter-body-sm h2 {
   color: white;

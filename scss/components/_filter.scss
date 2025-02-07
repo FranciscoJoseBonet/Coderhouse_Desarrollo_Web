@@ -114,6 +114,20 @@
   border-radius: $border-radius;
   box-shadow: 0 4px 6px $col_shadow;
 
+  .filter-group1 {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+  }
+
+  .filter-group2 {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
   h2 {
     color: $color_4;
     font-size: 20px;
