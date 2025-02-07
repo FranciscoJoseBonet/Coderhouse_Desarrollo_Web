@@ -144,9 +144,10 @@
     .small_navbar .nombre_head {
         color: $color_4;
         font-weight: bold;
-        font-size: 30px;
-        margin-top: 0.7rem;
+        font-size: 26px;
+        margin-top: 1rem;
         margin-left: 1rem;
+
     }
 
     /* Cuerpo del menu responsive para dispositivos pequeños */
@@ -321,6 +322,16 @@
     nav ul li a:active {
         background-color: $color_11;
         transform: translateY(0);
+    }
+
+    .buttons-nav {
+        display: flex;
+        gap: 10px;
+
+        button {
+            background-color: $color_1;
+            border-color: $color_14;
+        }
     }
 
     /* Diseño de las barras de busqueda en los encabezados */
@@ -558,6 +569,11 @@
                 align-items: center;
                 height: auto !important;
                 padding-bottom: 10px;
+                flex-direction: row !important;
+
+                .eliminar-item {
+                    width: 50% !important;
+                }
             }
         }
 

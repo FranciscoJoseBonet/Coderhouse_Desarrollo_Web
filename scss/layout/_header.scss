@@ -86,7 +86,7 @@ header {
 
   .search-box .lupita {
     position: relative;
-    top: -6px;
+    top: 0px;
     padding: 0;
   }
 }
@@ -98,4 +98,25 @@ header {
   color: $color_4;
   padding: 15px 4% 0;
   @include uppercase-bold(23px);
+
+  .buttons-nav {
+    display: flex;
+    gap:25px;
+
+    .carrito-btn{
+      margin-bottom: 15px;
+      color: $color_4;
+      --bs-btn-hover-bg: $color_14 !important;
+
+      &:hover{
+        background-color: $color_6 !important;
+      }
+
+      &:active{
+        background-color: $color_14 !important;
+        color: $color_4;
+        border-color: $color_1;
+      }
+    }
+  }
 }

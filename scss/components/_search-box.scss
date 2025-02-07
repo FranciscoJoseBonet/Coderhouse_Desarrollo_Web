@@ -7,11 +7,12 @@
 
   input {
     @include input-style;
-    height: 26px
+    height: 40px
   }
 
   button {
     @include button-style;
+    height: 43px;
 
     i {
       color: $color_4;

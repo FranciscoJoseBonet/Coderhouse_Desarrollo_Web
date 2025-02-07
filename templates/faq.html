@@ -30,10 +30,20 @@
                 <div class="nombre_head">
                     <p>Crossover.sf</p>
                 </div>
-                <form class="search-box" action="/buscar" method="get">
-                    <input type="Shorts, Camisetas basicas..." name="buscar" placeholder="Escribe aquí..." />
-                    <button type="post"><i class="fa-solid fa-magnifying-glass fa-xs lupita"></i></button>
-                </form>
+                <div class="buttons-nav">
+                    <form class="search-box" action="/buscar" method="get">
+                        <input type="Shorts, Camisetas basicas..." name="buscar" placeholder="Escribe aquí..." />
+                        <button type="post"><i class="fa-solid fa-magnifying-glass fa-xs lupita"></i></button>
+                    </form>
+                    <button type="button" class="btn btn-primary position-relative color-btn carrito-btn"
+                        onclick="window.location.href='carrito.html'">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span
+                            class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+                            <span class="visually-hidden">New alerts</span>
+                        </span>
+                    </button>
+                </div>
             </div>
             <div class="abajo">
                 <nav class="bot_head">
@@ -58,11 +68,22 @@
             <div class="nombre_head">
                 <p>Crossover.sf</p>
             </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            <div class="buttons-nav">
+                <button type="button" class="btn btn-primary position-relative"
+                    onclick="window.location.href='carrito.html'">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span
+                        class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+                        <span class="visually-hidden">New alerts</span>
+                    </span>
+                </button>
+                <!-- Botón para abrir el menú lateral en pantallas pequeñas -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
             <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
                 aria-labelledby="offcanvasDarkNavbarLabel">
                 <div class="offcanvas-header">

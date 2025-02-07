@@ -118,7 +118,7 @@ header nav .logonav {
 }
 header .search-box .lupita {
   position: relative;
-  top: -6px;
+  top: 0px;
   padding: 0;
 }
 
@@ -134,6 +134,23 @@ header .search-box .lupita {
   font-size: 23px;
   font-weight: bold;
   text-transform: uppercase;
+}
+.mid_head .buttons-nav {
+  display: flex;
+  gap: 25px;
+}
+.mid_head .buttons-nav .carrito-btn {
+  margin-bottom: 15px;
+  color: white;
+  --bs-btn-hover-bg: $color_14 !important;
+}
+.mid_head .buttons-nav .carrito-btn:hover {
+  background-color: #333 !important;
+}
+.mid_head .buttons-nav .carrito-btn:active {
+  background-color: #aaaaaa !important;
+  color: white;
+  border-color: rgb(0, 0, 0);
 }
 
 .holder .bot1,
@@ -324,7 +341,7 @@ footer a {
   outline: none;
   transition: border-color 0.3s ease;
   background-color: #424242;
-  height: 26px;
+  height: 40px;
 }
 .search-box input:focus {
   border-color: #aaaaaa;
@@ -341,6 +358,7 @@ footer a {
   cursor: pointer;
   transition: background-color 0.3s ease;
   height: 26px;
+  height: 43px;
 }
 .search-box button:hover {
   background-color: #424242;
@@ -1637,8 +1655,8 @@ footer a {
   .small_navbar .nombre_head {
     color: white;
     font-weight: bold;
-    font-size: 30px;
-    margin-top: 0.7rem;
+    font-size: 26px;
+    margin-top: 1rem;
     margin-left: 1rem;
   }
   /* Cuerpo del menu responsive para dispositivos pequeños */
@@ -1793,6 +1811,14 @@ footer a {
   nav ul li a:active {
     background-color: #585858;
     transform: translateY(0);
+  }
+  .buttons-nav {
+    display: flex;
+    gap: 10px;
+  }
+  .buttons-nav button {
+    background-color: rgb(0, 0, 0);
+    border-color: #aaaaaa;
   }
   /* Diseño de las barras de busqueda en los encabezados */
   .search-box {
@@ -1987,6 +2013,10 @@ footer a {
     align-items: center;
     height: auto !important;
     padding-bottom: 10px;
+    flex-direction: row !important;
+  }
+  .body-carrito .individuales-carrito .interactivo-carrito .eliminar-item {
+    width: 50% !important;
   }
 }
 @media (max-width: 576px) {
