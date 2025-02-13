@@ -282,7 +282,7 @@ a {
 }
 
 .fl_bar p {
-  animation: marquee 10s linear infinite;
+  animation: marquee 10s linear infinite alternate;
   white-space: nowrap;
   display: inline-block;
 }
