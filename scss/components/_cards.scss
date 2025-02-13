@@ -32,6 +32,11 @@
     background-color: $color_14;
     border-color: $color_1;
   }
+
+  &:active{
+    background-color: $color_1 !important;
+    border-color: $color_1 !important;
+  }
 }
 
 

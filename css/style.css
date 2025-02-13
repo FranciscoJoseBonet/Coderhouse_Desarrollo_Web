@@ -1319,6 +1319,10 @@ footer a {
   background-color: #aaaaaa;
   border-color: rgb(0, 0, 0);
 }
+.color-btn:active {
+  background-color: rgb(0, 0, 0) !important;
+  border-color: rgb(0, 0, 0) !important;
+}
 
 .card-title {
   text-align: center;
